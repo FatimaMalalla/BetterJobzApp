@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C3213BEF2CF33D6800E6F043 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3213BEE2CF33D6800E6F043 /* AppDelegate.swift */; };
+		C3213BF12CF33D6800E6F043 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3213BF02CF33D6800E6F043 /* SceneDelegate.swift */; };
+		C3213BF32CF33D6800E6F043 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3213BF22CF33D6800E6F043 /* ViewController.swift */; };
+		C3213BF62CF33D6800E6F043 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3213BF42CF33D6800E6F043 /* Main.storyboard */; };
+		C3213BF82CF33D6A00E6F043 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3213BF72CF33D6A00E6F043 /* Assets.xcassets */; };
+		C3213C062CF33D6A00E6F043 /* BetterJobzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3213C052CF33D6A00E6F043 /* BetterJobzTests.swift */; };
+		C3213C102CF33D6A00E6F043 /* BetterJobzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3213C0F2CF33D6A00E6F043 /* BetterJobzUITests.swift */; };
+		C3213C122CF33D6A00E6F043 /* BetterJobzUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3213C112CF33D6A00E6F043 /* BetterJobzUITestsLaunchTests.swift */; };
+		C36EB0542CF3820E008AC079 /* CustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36EB0532CF3820E008AC079 /* CustomSegue.swift */; };
+		C391916D2CF36AF90091E039 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C391916C2CF36AF90091E039 /* Launch Screen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3213C022CF33D6A00E6F043 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3213BE32CF33D6800E6F043 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3213BEA2CF33D6800E6F043;
+			remoteInfo = BetterJobz;
+		};
+		C3213C0C2CF33D6A00E6F043 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3213BE32CF33D6800E6F043 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3213BEA2CF33D6800E6F043;
+			remoteInfo = BetterJobz;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C3213BEB2CF33D6800E6F043 /* BetterJobz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterJobz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3213BEE2CF33D6800E6F043 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C3213BF02CF33D6800E6F043 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C3213BF22CF33D6800E6F043 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C3213BF52CF33D6800E6F043 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C3213BF72CF33D6A00E6F043 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3213BFC2CF33D6A00E6F043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3213C012CF33D6A00E6F043 /* BetterJobzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetterJobzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3213C052CF33D6A00E6F043 /* BetterJobzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterJobzTests.swift; sourceTree = "<group>"; };
+		C3213C0B2CF33D6A00E6F043 /* BetterJobzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetterJobzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3213C0F2CF33D6A00E6F043 /* BetterJobzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterJobzUITests.swift; sourceTree = "<group>"; };
+		C3213C112CF33D6A00E6F043 /* BetterJobzUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterJobzUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C36EB0532CF3820E008AC079 /* CustomSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegue.swift; sourceTree = "<group>"; };
+		C391916C2CF36AF90091E039 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3213BE82CF33D6800E6F043 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3213BFE2CF33D6A00E6F043 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3213C082CF33D6A00E6F043 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3213BE22CF33D6800E6F043 = {
+			isa = PBXGroup;
+			children = (
+				C3213BED2CF33D6800E6F043 /* BetterJobz */,
+				C3213C042CF33D6A00E6F043 /* BetterJobzTests */,
+				C3213C0E2CF33D6A00E6F043 /* BetterJobzUITests */,
+				C3213BEC2CF33D6800E6F043 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3213BEC2CF33D6800E6F043 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3213BEB2CF33D6800E6F043 /* BetterJobz.app */,
+				C3213C012CF33D6A00E6F043 /* BetterJobzTests.xctest */,
+				C3213C0B2CF33D6A00E6F043 /* BetterJobzUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3213BED2CF33D6800E6F043 /* BetterJobz */ = {
+			isa = PBXGroup;
+			children = (
+				C3213BEE2CF33D6800E6F043 /* AppDelegate.swift */,
+				C3213BF02CF33D6800E6F043 /* SceneDelegate.swift */,
+				C3213BF22CF33D6800E6F043 /* ViewController.swift */,
+				C391916C2CF36AF90091E039 /* Launch Screen.storyboard */,
+				C3213BF42CF33D6800E6F043 /* Main.storyboard */,
+				C36EB0552CF3832E008AC079 /* Segues */,
+				C3213BF72CF33D6A00E6F043 /* Assets.xcassets */,
+				C3213BFC2CF33D6A00E6F043 /* Info.plist */,
+			);
+			path = BetterJobz;
+			sourceTree = "<group>";
+		};
+		C3213C042CF33D6A00E6F043 /* BetterJobzTests */ = {
+			isa = PBXGroup;
+			children = (
+				C3213C052CF33D6A00E6F043 /* BetterJobzTests.swift */,
+			);
+			path = BetterJobzTests;
+			sourceTree = "<group>";
+		};
+		C3213C0E2CF33D6A00E6F043 /* BetterJobzUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C3213C0F2CF33D6A00E6F043 /* BetterJobzUITests.swift */,
+				C3213C112CF33D6A00E6F043 /* BetterJobzUITestsLaunchTests.swift */,
+			);
+			path = BetterJobzUITests;
+			sourceTree = "<group>";
+		};
+		C36EB0552CF3832E008AC079 /* Segues */ = {
+			isa = PBXGroup;
+			children = (
+				C36EB0532CF3820E008AC079 /* CustomSegue.swift */,
+			);
+			path = Segues;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3213BEA2CF33D6800E6F043 /* BetterJobz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3213C152CF33D6A00E6F043 /* Build configuration list for PBXNativeTarget "BetterJobz" */;
+			buildPhases = (
+				C3213BE72CF33D6800E6F043 /* Sources */,
+				C3213BE82CF33D6800E6F043 /* Frameworks */,
+				C3213BE92CF33D6800E6F043 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BetterJobz;
+			productName = BetterJobz;
+			productReference = C3213BEB2CF33D6800E6F043 /* BetterJobz.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C3213C002CF33D6A00E6F043 /* BetterJobzTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3213C182CF33D6A00E6F043 /* Build configuration list for PBXNativeTarget "BetterJobzTests" */;
+			buildPhases = (
+				C3213BFD2CF33D6A00E6F043 /* Sources */,
+				C3213BFE2CF33D6A00E6F043 /* Frameworks */,
+				C3213BFF2CF33D6A00E6F043 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3213C032CF33D6A00E6F043 /* PBXTargetDependency */,
+			);
+			name = BetterJobzTests;
+			productName = BetterJobzTests;
+			productReference = C3213C012CF33D6A00E6F043 /* BetterJobzTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C3213C0A2CF33D6A00E6F043 /* BetterJobzUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3213C1B2CF33D6A00E6F043 /* Build configuration list for PBXNativeTarget "BetterJobzUITests" */;
+			buildPhases = (
+				C3213C072CF33D6A00E6F043 /* Sources */,
+				C3213C082CF33D6A00E6F043 /* Frameworks */,
+				C3213C092CF33D6A00E6F043 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3213C0D2CF33D6A00E6F043 /* PBXTargetDependency */,
+			);
+			name = BetterJobzUITests;
+			productName = BetterJobzUITests;
+			productReference = C3213C0B2CF33D6A00E6F043 /* BetterJobzUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3213BE32CF33D6800E6F043 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					C3213BEA2CF33D6800E6F043 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					C3213C002CF33D6A00E6F043 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = C3213BEA2CF33D6800E6F043;
+					};
+					C3213C0A2CF33D6A00E6F043 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = C3213BEA2CF33D6800E6F043;
+					};
+				};
+			};
+			buildConfigurationList = C3213BE62CF33D6800E6F043 /* Build configuration list for PBXProject "BetterJobz" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3213BE22CF33D6800E6F043;
+			productRefGroup = C3213BEC2CF33D6800E6F043 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3213BEA2CF33D6800E6F043 /* BetterJobz */,
+				C3213C002CF33D6A00E6F043 /* BetterJobzTests */,
+				C3213C0A2CF33D6A00E6F043 /* BetterJobzUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3213BE92CF33D6800E6F043 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C391916D2CF36AF90091E039 /* Launch Screen.storyboard in Resources */,
+				C3213BF82CF33D6A00E6F043 /* Assets.xcassets in Resources */,
+				C3213BF62CF33D6800E6F043 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3213BFF2CF33D6A00E6F043 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3213C092CF33D6A00E6F043 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3213BE72CF33D6800E6F043 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C36EB0542CF3820E008AC079 /* CustomSegue.swift in Sources */,
+				C3213BF32CF33D6800E6F043 /* ViewController.swift in Sources */,
+				C3213BEF2CF33D6800E6F043 /* AppDelegate.swift in Sources */,
+				C3213BF12CF33D6800E6F043 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3213BFD2CF33D6A00E6F043 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3213C062CF33D6A00E6F043 /* BetterJobzTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3213C072CF33D6A00E6F043 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3213C102CF33D6A00E6F043 /* BetterJobzUITests.swift in Sources */,
+				C3213C122CF33D6A00E6F043 /* BetterJobzUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3213C032CF33D6A00E6F043 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3213BEA2CF33D6800E6F043 /* BetterJobz */;
+			targetProxy = C3213C022CF33D6A00E6F043 /* PBXContainerItemProxy */;
+		};
+		C3213C0D2CF33D6A00E6F043 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3213BEA2CF33D6800E6F043 /* BetterJobz */;
+			targetProxy = C3213C0C2CF33D6A00E6F043 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C3213BF42CF33D6800E6F043 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3213BF52CF33D6800E6F043 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3213C132CF33D6A00E6F043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C3213C142CF33D6A00E6F043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3213C162CF33D6A00E6F043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BetterJobz/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bp.polytechnic.BetterJobz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C3213C172CF33D6A00E6F043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BetterJobz/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bp.polytechnic.BetterJobz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C3213C192CF33D6A00E6F043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bp.polytechnic.BetterJobzTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BetterJobz.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BetterJobz";
+			};
+			name = Debug;
+		};
+		C3213C1A2CF33D6A00E6F043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bp.polytechnic.BetterJobzTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BetterJobz.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BetterJobz";
+			};
+			name = Release;
+		};
+		C3213C1C2CF33D6A00E6F043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bp.polytechnic.BetterJobzUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BetterJobz;
+			};
+			name = Debug;
+		};
+		C3213C1D2CF33D6A00E6F043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bp.polytechnic.BetterJobzUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BetterJobz;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3213BE62CF33D6800E6F043 /* Build configuration list for PBXProject "BetterJobz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3213C132CF33D6A00E6F043 /* Debug */,
+				C3213C142CF33D6A00E6F043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3213C152CF33D6A00E6F043 /* Build configuration list for PBXNativeTarget "BetterJobz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3213C162CF33D6A00E6F043 /* Debug */,
+				C3213C172CF33D6A00E6F043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3213C182CF33D6A00E6F043 /* Build configuration list for PBXNativeTarget "BetterJobzTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3213C192CF33D6A00E6F043 /* Debug */,
+				C3213C1A2CF33D6A00E6F043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3213C1B2CF33D6A00E6F043 /* Build configuration list for PBXNativeTarget "BetterJobzUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3213C1C2CF33D6A00E6F043 /* Debug */,
+				C3213C1D2CF33D6A00E6F043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3213BE32CF33D6800E6F043 /* Project object */;
+}
