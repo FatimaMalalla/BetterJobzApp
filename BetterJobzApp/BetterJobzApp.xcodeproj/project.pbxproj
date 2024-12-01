@@ -25,6 +25,8 @@
 		D43E51B92CF6064200916325 /* DashboardStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D43E51B82CF6064200916325 /* DashboardStoryBoard.storyboard */; };
 		D43E51BB2CF60FBD00916325 /* GradientBg.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E51BA2CF60FBD00916325 /* GradientBg.swift */; };
 		D43E51BF2CF614D900916325 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E51BE2CF614D900916325 /* DashboardViewController.swift */; };
+		F277A1082CFC755D00033A29 /* JobApplicationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F277A1072CFC755D00033A29 /* JobApplicationStoryboard.storyboard */; };
+		F277A10A2CFC75B800033A29 /* SkillDevelopmentStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F277A1092CFC75B800033A29 /* SkillDevelopmentStoryBoard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		D43E51B82CF6064200916325 /* DashboardStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashboardStoryBoard.storyboard; sourceTree = "<group>"; };
 		D43E51BA2CF60FBD00916325 /* GradientBg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBg.swift; sourceTree = "<group>"; };
 		D43E51BE2CF614D900916325 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		F277A1072CFC755D00033A29 /* JobApplicationStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JobApplicationStoryboard.storyboard; sourceTree = "<group>"; };
+		F277A1092CFC75B800033A29 /* SkillDevelopmentStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SkillDevelopmentStoryBoard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,7 @@
 				D43E517C2CF5EA3600916325 /* SceneDelegate.swift */,
 				D43E517E2CF5EA3600916325 /* ViewController.swift */,
 				D43E51852CF5EA3800916325 /* LaunchScreen.storyboard */,
+				F277A1072CFC755D00033A29 /* JobApplicationStoryboard.storyboard */,
 				D43E51802CF5EA3600916325 /* Main.storyboard */,
 				D43E51BE2CF614D900916325 /* DashboardViewController.swift */,
 				D43E51B82CF6064200916325 /* DashboardStoryBoard.storyboard */,
@@ -129,6 +134,7 @@
 				D43E51B02CF5EE4300916325 /* SettingsStoryBoard.storyboard */,
 				D43E51B22CF5EEC800916325 /* EmpDashboardStroryBoard.storyboard */,
 				D43E51B42CF5EEE500916325 /* EmpProfileStoryBoard.storyboard */,
+				F277A1092CFC75B800033A29 /* SkillDevelopmentStoryBoard.storyboard */,
 				D43E51B62CF5EF0900916325 /* JobPostingStoryboard.storyboard */,
 				D43E51BA2CF60FBD00916325 /* GradientBg.swift */,
 				D43E51832CF5EA3800916325 /* Assets.xcassets */,
@@ -260,10 +266,12 @@
 			files = (
 				D43E51872CF5EA3800916325 /* LaunchScreen.storyboard in Resources */,
 				D43E51842CF5EA3800916325 /* Assets.xcassets in Resources */,
+				F277A1082CFC755D00033A29 /* JobApplicationStoryboard.storyboard in Resources */,
 				D43E51B72CF5EF0900916325 /* JobPostingStoryboard.storyboard in Resources */,
 				D43E51B52CF5EEE500916325 /* EmpProfileStoryBoard.storyboard in Resources */,
 				D43E51822CF5EA3600916325 /* Main.storyboard in Resources */,
 				D43E51B12CF5EE4300916325 /* SettingsStoryBoard.storyboard in Resources */,
+				F277A10A2CFC75B800033A29 /* SkillDevelopmentStoryBoard.storyboard in Resources */,
 				D43E51B92CF6064200916325 /* DashboardStoryBoard.storyboard in Resources */,
 				D43E51AD2CF5EE2000916325 /* CVtoolStoryboard.storyboard in Resources */,
 				D43E51B32CF5EEC800916325 /* EmpDashboardStroryBoard.storyboard in Resources */,
