@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C3A8360B2CFC6A2C00A1AFB2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C3A8360A2CFC6A2C00A1AFB2 /* GoogleService-Info.plist */; };
+		C3A8360F2CFC6BF200A1AFB2 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = C3A8360E2CFC6BF200A1AFB2 /* FirebaseCore */; };
+		C3A836112CFC6C0200A1AFB2 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = C3A836102CFC6C0200A1AFB2 /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		C3A836132CFC6C0600A1AFB2 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = C3A836122CFC6C0600A1AFB2 /* FirebaseAnalytics */; };
+		C3A836152CFC6C0A00A1AFB2 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C3A836142CFC6C0A00A1AFB2 /* FirebaseAuth */; };
 		D43E517B2CF5EA3600916325 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E517A2CF5EA3600916325 /* AppDelegate.swift */; };
 		D43E517D2CF5EA3600916325 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E517C2CF5EA3600916325 /* SceneDelegate.swift */; };
 		D43E517F2CF5EA3600916325 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E517E2CF5EA3600916325 /* ViewController.swift */; };
@@ -45,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C3A8360A2CFC6A2C00A1AFB2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D43E51772CF5EA3600916325 /* BetterJobzApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterJobzApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D43E517A2CF5EA3600916325 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D43E517C2CF5EA3600916325 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +80,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3A8360F2CFC6BF200A1AFB2 /* FirebaseCore in Frameworks */,
+				C3A836112CFC6C0200A1AFB2 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				C3A836132CFC6C0600A1AFB2 /* FirebaseAnalytics in Frameworks */,
+				C3A836152CFC6C0A00A1AFB2 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +104,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C3A8360D2CFC6BF200A1AFB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D43E516E2CF5EA3600916325 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +118,7 @@
 				D43E51902CF5EA3800916325 /* BetterJobzAppTests */,
 				D43E519A2CF5EA3800916325 /* BetterJobzAppUITests */,
 				D43E51782CF5EA3600916325 /* Products */,
+				C3A8360D2CFC6BF200A1AFB2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +150,7 @@
 				D43E51B62CF5EF0900916325 /* JobPostingStoryboard.storyboard */,
 				D43E51BA2CF60FBD00916325 /* GradientBg.swift */,
 				D43E51832CF5EA3800916325 /* Assets.xcassets */,
+				C3A8360A2CFC6A2C00A1AFB2 /* GoogleService-Info.plist */,
 				D43E51882CF5EA3800916325 /* Info.plist */,
 			);
 			path = BetterJobzApp;
@@ -170,6 +189,12 @@
 			dependencies = (
 			);
 			name = BetterJobzApp;
+			packageProductDependencies = (
+				C3A8360E2CFC6BF200A1AFB2 /* FirebaseCore */,
+				C3A836102CFC6C0200A1AFB2 /* FirebaseAnalyticsWithoutAdIdSupport */,
+				C3A836122CFC6C0600A1AFB2 /* FirebaseAnalytics */,
+				C3A836142CFC6C0A00A1AFB2 /* FirebaseAuth */,
+			);
 			productName = BetterJobzApp;
 			productReference = D43E51772CF5EA3600916325 /* BetterJobzApp.app */;
 			productType = "com.apple.product-type.application";
@@ -242,6 +267,9 @@
 				Base,
 			);
 			mainGroup = D43E516E2CF5EA3600916325;
+			packageReferences = (
+				C3A8360C2CFC6AEE00A1AFB2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = D43E51782CF5EA3600916325 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -266,6 +294,7 @@
 				D43E51B12CF5EE4300916325 /* SettingsStoryBoard.storyboard in Resources */,
 				D43E51B92CF6064200916325 /* DashboardStoryBoard.storyboard in Resources */,
 				D43E51AD2CF5EE2000916325 /* CVtoolStoryboard.storyboard in Resources */,
+				C3A8360B2CFC6A2C00A1AFB2 /* GoogleService-Info.plist in Resources */,
 				D43E51B32CF5EEC800916325 /* EmpDashboardStroryBoard.storyboard in Resources */,
 				D43E51AF2CF5EE2F00916325 /* ProfileStoryBoard.storyboard in Resources */,
 			);
@@ -480,8 +509,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BetterJobzApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Betterjobz;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -507,8 +537,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BetterJobzApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Betterjobz;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -637,6 +668,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C3A8360C2CFC6AEE00A1AFB2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C3A8360E2CFC6BF200A1AFB2 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3A8360C2CFC6AEE00A1AFB2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		C3A836102CFC6C0200A1AFB2 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3A8360C2CFC6AEE00A1AFB2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		C3A836122CFC6C0600A1AFB2 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3A8360C2CFC6AEE00A1AFB2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		C3A836142CFC6C0A00A1AFB2 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3A8360C2CFC6AEE00A1AFB2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D43E516F2CF5EA3600916325 /* Project object */;
 }

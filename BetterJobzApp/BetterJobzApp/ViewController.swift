@@ -68,14 +68,14 @@ class ViewController: UIViewController {
                let phoneNumber = phoneNumberTextField.text ?? ""
 
                // Validate input
-//        if firstName.isEmpty, lastName.isEmpty, email.isEmpty, password.isEmpty {
-//            showAlert(title: "Alert", message: "Please fill in all required fields.")
-//        }
-//        else
-//        {
-//            showAlert(title: "Success", message: "User Created successfully!")
-//            performSegue(withIdentifier: "showDashboardSegue", sender: nil)
-//        }
+        if firstName.isEmpty, lastName.isEmpty, email.isEmpty, password.isEmpty {
+            showAlert(title: "Alert", message: "Please fill in all required fields.")
+        }
+        else
+        {
+            showAlert(title: "Success", message: "User Created successfully!")
+            performSegue(withIdentifier: "showDashboardSegue", sender: nil)
+        }
              
 
                // Save user details (e.g., to UserDefaults or a database)
