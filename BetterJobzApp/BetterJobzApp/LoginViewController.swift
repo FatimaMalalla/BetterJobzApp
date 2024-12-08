@@ -24,6 +24,7 @@ class LoginViewController: UIViewController {
     //Admin Login Credentials : Admin@gmail.com, Password : Password123
     //Employee Login Credentials : johndoe123@gmail.com , password : PassEmp
     //Job Seeker Login Credentials : Joyce@Gmail.com , Password : JY2000
+    //login : hj123@gmail.com  , password : Hpj123
     
 
     @IBAction func loginButtonTapped(_ sender: Any) {

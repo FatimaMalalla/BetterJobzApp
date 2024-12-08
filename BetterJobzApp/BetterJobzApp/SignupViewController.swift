@@ -11,12 +11,7 @@ import FirebaseDatabase
 
 class SignupViewController: UIViewController {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
-    }
-    
+  
     @IBOutlet weak var FirstNameTextField: UITextField!
     @IBOutlet weak var LastNameTextField: UITextField!
     @IBOutlet weak var EmailTextField: UITextField!
@@ -25,6 +20,11 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var GenderTextField: UITextField!
     @IBOutlet weak var PhoneNumberTextField: UITextField!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+    }
+      
     
     @IBAction func ResetFields(_ sender: Any) {
         FirstNameTextField.text = ""
@@ -38,29 +38,53 @@ class SignupViewController: UIViewController {
     
 
     @IBAction func CreateAccount(_ sender: Any) {
-        guard let firstName = FirstNameTextField.text, !firstName.isEmpty,
-              let lastName = LastNameTextField.text, !lastName.isEmpty,
-              let email = EmailTextField.text, !email.isEmpty,
-              let password = PasswordTextField.text, !password.isEmpty,
-              let dob = DobTextField.text, !dob.isEmpty,
-              let gender = GenderTextField.text, !gender.isEmpty,
-              let phone = PhoneNumberTextField.text, !phone.isEmpty
-        else {
-            let alert = UIAlertController(title: "Missing field data", message: "Please fill in all the fields", preferredStyle: .alert)
+        
+        guard let username = FirstNameTextField.text ,
+              let email =  EmailTextField.text,
+              let password = PasswordTextField.text,
+              !username.isEmpty && !email.isEmpty && !password.isEmpty
+        else{
+            let alert = UIAlertController(title: "Missing Field Data", message: "Please Fill in all the fields", preferredStyle: .alert)
+            
             alert.addAction(UIAlertAction(title: "OK", style: .cancel))
             self.present(alert, animated: true)
+            
             return
         }
         
         FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password, completion: {
             Result, error in
             guard error == nil else {
-                let alert = UIAlertController(title: "Error", message: "Signup Failed" , preferredStyle: .alert)
+                let alert = UIAlertController(title: "Error", message: "SignUp Failed", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "OK", style: .cancel))
                 self.present(alert, animated: true)
+                
                 return
             }
         })
+//        guard let firstName = FirstNameTextField.text, !firstName.isEmpty,
+//              let lastName = LastNameTextField.text, !lastName.isEmpty,
+//              let email = EmailTextField.text, !email.isEmpty,
+//              let password = PasswordTextField.text, !password.isEmpty,
+//              let dob = DobTextField.text, !dob.isEmpty,
+//              let gender = GenderTextField.text, !gender.isEmpty,
+//              let phone = PhoneNumberTextField.text, !phone.isEmpty
+//        else {
+//            let alert = UIAlertController(title: "Missing field data", message: "Please fill in all the fields", preferredStyle: .alert)
+//            alert.addAction(UIAlertAction(title: "OK", style: .cancel))
+//            self.present(alert, animated: true)
+//            return
+//        }
+//        
+//        FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password, completion: {
+//            Result, error in
+//            guard error == nil else {
+//                let alert = UIAlertController(title: "Error", message: "Signup Failed" , preferredStyle: .alert)
+//                alert.addAction(UIAlertAction(title: "OK", style: .cancel))
+//                self.present(alert, animated: true)
+//                return
+//            }
+//        })
     }
         // Create User in Firebase Auth
 //        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in

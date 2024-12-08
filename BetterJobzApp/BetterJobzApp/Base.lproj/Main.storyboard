@@ -432,6 +432,7 @@
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="CreateAccount:" destination="3qn-pb-Fan" eventType="touchUpInside" id="jLB-wS-C6D"/>
+                                                            <segue destination="PGc-jp-q97" kind="show" id="aEh-GA-beQ"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -452,20 +453,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="XPg-ib-wIy"/>
                     <connections>
-                        <outlet property="DobTextField" destination="3kQ-XO-1j9" id="7cL-7I-dtl"/>
-                        <outlet property="EmailTextField" destination="5N8-t8-3o6" id="V6F-5A-5yb"/>
-                        <outlet property="FirstNameTextField" destination="WQ4-Rk-6RX" id="Mud-Ko-6Tv"/>
-                        <outlet property="GenderTextField" destination="QEQ-Ry-S5T" id="XBJ-XB-2oi"/>
-                        <outlet property="LastNameTextField" destination="kDl-1H-k0H" id="P0Y-Yy-eDY"/>
-                        <outlet property="PasswordTextField" destination="vi5-CH-mEv" id="b0D-M3-VNU"/>
-                        <outlet property="PhoneNumberTextField" destination="6ec-VQ-vPO" id="QsU-if-xoQ"/>
-                        <outlet property="emailTextField" destination="5N8-t8-3o6" id="wOo-vs-86U"/>
-                        <outlet property="firstNameTextField" destination="WQ4-Rk-6RX" id="NMX-oZ-bLb"/>
-                        <outlet property="genderTextField" destination="QEQ-Ry-S5T" id="MqK-Fi-lmz"/>
-                        <outlet property="lastNameTextField" destination="kDl-1H-k0H" id="ets-uK-FEJ"/>
-                        <outlet property="passwordTextField" destination="vi5-CH-mEv" id="J1A-RK-OK2"/>
-                        <outlet property="phoneNumberTextField" destination="6ec-VQ-vPO" id="1ty-7m-FzC"/>
-                        <segue destination="6Ae-h1-kys" kind="show" identifier="showDashboardSegue" id="cXi-sw-74M"/>
+                        <outlet property="DobTextField" destination="3kQ-XO-1j9" id="MQL-V0-LNn"/>
+                        <outlet property="EmailTextField" destination="5N8-t8-3o6" id="KMM-ET-e3u"/>
+                        <outlet property="FirstNameTextField" destination="WQ4-Rk-6RX" id="9Nd-tv-Aoc"/>
+                        <outlet property="GenderTextField" destination="QEQ-Ry-S5T" id="A3G-z5-xz9"/>
+                        <outlet property="LastNameTextField" destination="kDl-1H-k0H" id="hW9-eS-Duf"/>
+                        <outlet property="PasswordTextField" destination="vi5-CH-mEv" id="0C9-gM-sWo"/>
+                        <outlet property="PhoneNumberTextField" destination="6ec-VQ-vPO" id="q02-uQ-Tef"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l5d-Cs-rbU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -474,7 +468,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="cXi-sw-74M"/>
+        <segue reference="aEh-GA-beQ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Pasted Graphic" width="344" height="344"/>
@@ -482,7 +476,7 @@
             <color red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
