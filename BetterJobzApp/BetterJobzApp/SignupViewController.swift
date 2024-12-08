@@ -62,61 +62,8 @@ class SignupViewController: UIViewController {
                 return
             }
         })
-//        guard let firstName = FirstNameTextField.text, !firstName.isEmpty,
-//              let lastName = LastNameTextField.text, !lastName.isEmpty,
-//              let email = EmailTextField.text, !email.isEmpty,
-//              let password = PasswordTextField.text, !password.isEmpty,
-//              let dob = DobTextField.text, !dob.isEmpty,
-//              let gender = GenderTextField.text, !gender.isEmpty,
-//              let phone = PhoneNumberTextField.text, !phone.isEmpty
-//        else {
-//            let alert = UIAlertController(title: "Missing field data", message: "Please fill in all the fields", preferredStyle: .alert)
-//            alert.addAction(UIAlertAction(title: "OK", style: .cancel))
-//            self.present(alert, animated: true)
-//            return
-//        }
-//        
-//        FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password, completion: {
-//            Result, error in
-//            guard error == nil else {
-//                let alert = UIAlertController(title: "Error", message: "Signup Failed" , preferredStyle: .alert)
-//                alert.addAction(UIAlertAction(title: "OK", style: .cancel))
-//                self.present(alert, animated: true)
-//                return
-//            }
-//        })
+
     }
-        // Create User in Firebase Auth
-//        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
-//            if let error = error {
-//                self.showAlert(title: "Error", message: error.localizedDescription)
-//                return
-//            }
-//            
-//            guard let user = authResult?.user else { return }
-//            let userID = user.uid
-//            
-//            // Save additional details in Firebase Realtime Database
-//            let databaseRef = Database.database().reference().child("users").child(userID)
-//            let userData: [String: Any] = [
-//                "firstName": firstName,
-//                "lastName": lastName,
-//                "email": email,
-//                "dob": dob,
-//                "gender": gender,
-//                "phone": phone
-//            ]
-//            
-//            databaseRef.setValue(userData) { error, _ in
-//                if let error = error {
-//                    self.showAlert(title: "Error", message: error.localizedDescription)
-//                    return
-//                }
-//                self.showAlert(title: "Success", message: "Account created successfully")
-//            }
-//        }
-        
-        
        
     
     
