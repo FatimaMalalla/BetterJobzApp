@@ -178,10 +178,10 @@
             </objects>
             <point key="canvasLocation" x="1922.9007633587785" y="-2.1126760563380285"/>
         </scene>
-        <!--DashboardStoryBoard-->
+        <!--SkillDevelopmentStoryBoard-->
         <scene sceneID="Jc9-RB-OnO">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="DashboardViewController" storyboardName="DashboardStoryBoard" id="6Ae-h1-kys" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="DashboardViewController" storyboardName="SkillDevelopmentStoryBoard" id="6Ae-h1-kys" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="H0X-g2-kcj"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dIo-0G-dxe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -400,13 +400,13 @@
     <resources>
         <image name="Pasted Graphic" width="344" height="344"/>
         <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="scrollViewTexturedBackgroundColor">
             <color red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray2Color">
-            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
