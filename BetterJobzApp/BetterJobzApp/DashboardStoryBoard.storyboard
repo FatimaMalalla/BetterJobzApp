@@ -3,123 +3,256 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="pWi-m7-M0i">
+        <scene sceneID="ybb-xI-M3a">
             <objects>
-                <viewController id="ydb-yZ-Zbg" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="mbY-sW-aYI">
+                <viewController id="K2s-Fe-mK5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eOu-H6-gTG">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="rmI-L9-Nhd">
+                            <searchBar contentMode="redraw" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="zCe-Ic-cLD">
                                 <rect key="frame" x="0.0" y="59" width="393" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r7N-x1-VuV">
-                                <rect key="frame" x="0.0" y="115" width="393" height="798"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7fE-ge-lZh">
+                                <rect key="frame" x="0.0" y="115" width="393" height="737"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1lP-ek-NHI">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1500"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5y9-jR-2fd">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="827"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="T3u-K3-uDl">
-                                                <rect key="frame" x="8" y="8" width="377" height="142"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="xGK-dJ-O4w">
+                                                <rect key="frame" x="16" y="0.0" width="361" height="763"/>
                                                 <subviews>
-                                                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="UpJ-HR-j8D">
-                                                        <rect key="frame" x="0.0" y="0.0" width="377" height="68"/>
+                                                    <button opaque="NO" contentMode="TopLeft" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DtX-9o-3WZ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="361" height="66"/>
+                                                        <color key="backgroundColor" red="0.1024794802" green="0.16145801539999999" blue="0.30207788940000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="66" id="uke-z1-Mwh"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Job Application Status" cornerStyle="dynamic">
+                                                            <directionalEdgeInsets key="contentInsets" top="8" leading="11" bottom="20" trailing="20"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O9B-gs-Zjr">
+                                                        <rect key="frame" x="0.0" y="72" width="361" height="66"/>
+                                                        <color key="backgroundColor" red="0.1024794802" green="0.16145801539999999" blue="0.30207788940000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="66" id="ezO-WW-kGF"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button" image="arrow.right" catalog="system"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Skill Development">
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ge-CN-6AM">
+                                                        <rect key="frame" x="0.0" y="144" width="361" height="27"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Job Posts">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="23" name="DMSerifDisplay-Regular"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eth-tS-5pj">
+                                                        <rect key="frame" x="0.0" y="177" width="361" height="142"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="TopLeft" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DuW-F1-MsS">
-                                                                <rect key="frame" x="0.0" y="0.0" width="377" height="67"/>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SoftwareJob" translatesAutoresizingMaskIntoConstraints="NO" id="y9T-Pz-ltu">
+                                                                <rect key="frame" x="180" y="0.0" width="181" height="142"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <color key="backgroundColor" red="0.1024794802" green="0.16145801539999999" blue="0.30207788940000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Software Engineer Job Available" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O27-0y-TEo">
+                                                                <rect key="frame" x="8" y="38" width="145" height="49"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E44-aG-Q7M">
+                                                                <rect key="frame" x="48" y="95" width="85" height="29"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" title="Job Application Status" cornerStyle="dynamic">
-                                                                    <directionalEdgeInsets key="contentInsets" top="8" leading="11" bottom="20" trailing="20"/>
-                                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <buttonConfiguration key="configuration" style="filled" title="Apply">
+                                                                    <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </buttonConfiguration>
-                                                                <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                        <integer key="value" value="10"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                </userDefinedRuntimeAttributes>
                                                             </button>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pasted Graphic 1" translatesAutoresizingMaskIntoConstraints="NO" id="076-6K-yMP">
-                                                                <rect key="frame" x="0.0" y="39" width="369" height="28"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            </imageView>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="backgroundColor" red="0.1453614533" green="0.23530036209999999" blue="0.41938996319999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xx0-A2-eu2">
-                                                        <rect key="frame" x="0.0" y="74" width="377" height="68"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1eH-Xo-FBF">
+                                                        <rect key="frame" x="0.0" y="325" width="361" height="142"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCX-fe-NiG">
-                                                                <rect key="frame" x="0.0" y="0.0" width="377" height="66"/>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="engineerjob" translatesAutoresizingMaskIntoConstraints="NO" id="ib0-Ua-GUb">
+                                                                <rect key="frame" x="131" y="-14" width="240" height="171"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <color key="backgroundColor" red="0.1024794802" green="0.16145801539999999" blue="0.30207788940000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <state key="normal" title="Button" image="arrow.right" catalog="system"/>
-                                                                <buttonConfiguration key="configuration" style="plain" title="Skill Development">
-                                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USH-bY-EQH">
+                                                                <rect key="frame" x="8" y="33" width="123" height="49"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <string key="text">Engineer 
+Job Available</string>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HsR-tX-OgB">
+                                                                <rect key="frame" x="46" y="91" width="85" height="29"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="filled" title="Apply">
+                                                                    <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </buttonConfiguration>
-                                                                <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                        <integer key="value" value="10"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                </userDefinedRuntimeAttributes>
                                                             </button>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pasted Graphic 1" translatesAutoresizingMaskIntoConstraints="NO" id="O5g-ke-2WD">
-                                                                <rect key="frame" x="0.0" y="39" width="369" height="28"/>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.1453614533" green="0.23530036209999999" blue="0.41938996319999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n2P-Rh-EoV">
+                                                        <rect key="frame" x="0.0" y="473" width="361" height="142"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vby-Wt-w2N">
+                                                                <rect key="frame" x="8" y="39" width="123" height="49"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <string key="text">Teacher 
+Job Available</string>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="teacherJob" translatesAutoresizingMaskIntoConstraints="NO" id="Y1g-kt-QPT">
+                                                                <rect key="frame" x="169" y="-2" width="184" height="148"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i1x-nL-sS3">
+                                                                <rect key="frame" x="46" y="93" width="85" height="29"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="filled" title="Apply">
+                                                                    <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </buttonConfiguration>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.1453614533" green="0.23530036209999999" blue="0.41938996319999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S8w-kw-A4U">
+                                                        <rect key="frame" x="0.0" y="621" width="361" height="142"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJa-uv-McL">
+                                                                <rect key="frame" x="8" y="38" width="123" height="49"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <string key="text">Chef 
+Job Available</string>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jja-kF-Gf1">
+                                                                <rect key="frame" x="46" y="91" width="85" height="29"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="filled" title="Apply">
+                                                                    <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </buttonConfiguration>
+                                                            </button>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ChefJob" translatesAutoresizingMaskIntoConstraints="NO" id="ZQO-7v-WzR">
+                                                                <rect key="frame" x="168" y="0.0" width="193" height="142"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             </imageView>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="backgroundColor" red="0.1453614533" green="0.23530036209999999" blue="0.41938996319999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="n2P-Rh-EoV" firstAttribute="top" secondItem="xGK-dJ-O4w" secondAttribute="top" constant="473" id="0kR-i7-LcK"/>
+                                                    <constraint firstAttribute="trailing" secondItem="O9B-gs-Zjr" secondAttribute="trailing" id="FvP-h1-zUx"/>
+                                                    <constraint firstItem="S8w-kw-A4U" firstAttribute="top" secondItem="xGK-dJ-O4w" secondAttribute="top" constant="621" id="KBF-7S-MPx"/>
+                                                    <constraint firstItem="O9B-gs-Zjr" firstAttribute="leading" secondItem="xGK-dJ-O4w" secondAttribute="leading" id="est-ZZ-vRt"/>
+                                                    <constraint firstItem="DtX-9o-3WZ" firstAttribute="leading" secondItem="xGK-dJ-O4w" secondAttribute="leading" id="jVL-OK-iJO"/>
+                                                    <constraint firstAttribute="trailing" secondItem="DtX-9o-3WZ" secondAttribute="trailing" id="pDW-3b-say"/>
+                                                    <constraint firstItem="1eH-Xo-FBF" firstAttribute="top" secondItem="xGK-dJ-O4w" secondAttribute="top" constant="325" id="rlz-a4-L4H"/>
+                                                    <constraint firstItem="DtX-9o-3WZ" firstAttribute="top" secondItem="xGK-dJ-O4w" secondAttribute="top" id="rpz-5Z-XKd"/>
+                                                </constraints>
                                             </stackView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstItem="T3u-K3-uDl" firstAttribute="leading" secondItem="1lP-ek-NHI" secondAttribute="leading" constant="8" id="3b8-6Z-eMh"/>
-                                            <constraint firstItem="T3u-K3-uDl" firstAttribute="top" secondItem="1lP-ek-NHI" secondAttribute="top" constant="8" id="6Dz-x7-tfx"/>
-                                            <constraint firstAttribute="trailing" secondItem="T3u-K3-uDl" secondAttribute="trailing" constant="8" id="Fg9-co-HhK"/>
-                                            <constraint firstAttribute="bottom" secondItem="T3u-K3-uDl" secondAttribute="bottom" constant="1350" id="RKO-vp-xO5"/>
-                                            <constraint firstAttribute="height" constant="1500" id="ZfK-yp-JcU"/>
+                                            <constraint firstItem="xGK-dJ-O4w" firstAttribute="leading" secondItem="5y9-jR-2fd" secondAttribute="leading" constant="16" id="774-29-9y6"/>
+                                            <constraint firstAttribute="height" constant="827" id="Uel-1G-4vP"/>
+                                            <constraint firstItem="xGK-dJ-O4w" firstAttribute="centerX" secondItem="5y9-jR-2fd" secondAttribute="centerX" id="elv-Dc-JG4"/>
+                                            <constraint firstItem="xGK-dJ-O4w" firstAttribute="top" secondItem="5y9-jR-2fd" secondAttribute="top" id="pQ0-kx-GcH"/>
+                                            <constraint firstAttribute="bottom" secondItem="xGK-dJ-O4w" secondAttribute="bottom" constant="64" id="xgU-Ng-t23"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="1lP-ek-NHI" firstAttribute="top" secondItem="r7N-x1-VuV" secondAttribute="top" id="689-5S-bXG"/>
-                                    <constraint firstAttribute="bottom" secondItem="1lP-ek-NHI" secondAttribute="bottom" id="Grb-mj-LxL"/>
-                                    <constraint firstAttribute="trailing" secondItem="1lP-ek-NHI" secondAttribute="trailing" id="RTq-R8-vJG"/>
-                                    <constraint firstItem="1lP-ek-NHI" firstAttribute="leading" secondItem="r7N-x1-VuV" secondAttribute="leading" id="iHz-kx-9C7"/>
-                                    <constraint firstItem="1lP-ek-NHI" firstAttribute="centerX" secondItem="r7N-x1-VuV" secondAttribute="centerX" id="sAW-Lu-TPT"/>
+                                    <constraint firstItem="5y9-jR-2fd" firstAttribute="centerX" secondItem="7fE-ge-lZh" secondAttribute="centerX" id="4rk-WB-sqE"/>
+                                    <constraint firstAttribute="bottom" secondItem="5y9-jR-2fd" secondAttribute="bottom" constant="32" id="NIA-hT-Npu"/>
+                                    <constraint firstItem="5y9-jR-2fd" firstAttribute="leading" secondItem="7fE-ge-lZh" secondAttribute="leading" id="tHV-7F-atl"/>
+                                    <constraint firstItem="5y9-jR-2fd" firstAttribute="top" secondItem="7fE-ge-lZh" secondAttribute="top" id="u2c-eG-HAb"/>
+                                    <constraint firstAttribute="trailing" secondItem="5y9-jR-2fd" secondAttribute="trailing" id="uzQ-I9-LKd"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="C1E-d6-73g"/>
+                        <viewLayoutGuide key="safeArea" id="CWh-tG-w6U"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="r7N-x1-VuV" firstAttribute="leading" secondItem="C1E-d6-73g" secondAttribute="leading" id="Chx-1S-ogs"/>
-                            <constraint firstItem="r7N-x1-VuV" firstAttribute="centerX" secondItem="mbY-sW-aYI" secondAttribute="centerX" id="GMf-ir-u6P"/>
-                            <constraint firstAttribute="bottom" secondItem="r7N-x1-VuV" secondAttribute="bottom" constant="-61" id="Gwg-Id-cpL"/>
-                            <constraint firstItem="r7N-x1-VuV" firstAttribute="top" secondItem="mbY-sW-aYI" secondAttribute="top" constant="115" id="Zx2-7u-NEa"/>
-                            <constraint firstItem="r7N-x1-VuV" firstAttribute="leading" secondItem="rmI-L9-Nhd" secondAttribute="leading" id="dZM-DT-O11"/>
-                            <constraint firstItem="r7N-x1-VuV" firstAttribute="trailing" secondItem="rmI-L9-Nhd" secondAttribute="trailing" id="f1B-hQ-guQ"/>
-                            <constraint firstItem="r7N-x1-VuV" firstAttribute="top" secondItem="rmI-L9-Nhd" secondAttribute="bottom" id="mvU-b0-H7K"/>
+                            <constraint firstItem="7fE-ge-lZh" firstAttribute="leading" secondItem="CWh-tG-w6U" secondAttribute="leading" id="3cU-lY-mfa"/>
+                            <constraint firstItem="7fE-ge-lZh" firstAttribute="top" secondItem="zCe-Ic-cLD" secondAttribute="bottom" id="Cvp-kc-ypH"/>
+                            <constraint firstItem="zCe-Ic-cLD" firstAttribute="trailing" secondItem="7fE-ge-lZh" secondAttribute="trailing" id="Pp7-ig-uwG"/>
+                            <constraint firstItem="7fE-ge-lZh" firstAttribute="trailing" secondItem="CWh-tG-w6U" secondAttribute="trailing" id="Ryv-p4-r1m"/>
+                            <constraint firstItem="zCe-Ic-cLD" firstAttribute="top" secondItem="CWh-tG-w6U" secondAttribute="top" id="kty-CV-zco"/>
+                            <constraint firstItem="zCe-Ic-cLD" firstAttribute="leading" secondItem="7fE-ge-lZh" secondAttribute="leading" id="nuj-vT-xg5"/>
+                            <constraint firstAttribute="bottom" secondItem="7fE-ge-lZh" secondAttribute="bottom" id="tLy-jm-jVE"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" id="LHG-70-vSO">
-                        <imageReference key="selectedImage" image="house.fill" catalog="system" symbolScale="large" renderingMode="hierarchical"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="" image="house.fill" catalog="system" selectedImage="house.fill" id="aEN-LN-hZo"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dfP-ik-STD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JXX-QL-pYo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-190" y="-561"/>
+            <point key="canvasLocation" x="-448.09160305343511" y="-685.21126760563379"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="m59-i3-xW3">
@@ -131,7 +264,9 @@
                         <viewLayoutGuide key="safeArea" id="ee1-Wj-SEx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" selectedImage="gear" catalog="system" id="KXD-Aj-Pwc"/>
+                    <tabBarItem key="tabBarItem" title="" image="gear" catalog="system" selectedImage="gear" id="KXD-Aj-Pwc">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KxD-qF-EPL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -157,7 +292,9 @@
                         <viewLayoutGuide key="safeArea" id="EpS-Zt-Nz6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" selectedImage="person.fill" catalog="system" id="wWw-eb-HMN"/>
+                    <tabBarItem key="tabBarItem" title="" image="person.fill" catalog="system" selectedImage="person.fill" id="wWw-eb-HMN">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4HT-9c-C19" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -168,19 +305,28 @@
             <objects>
                 <tabBarController storyboardIdentifier="DashboardViewController" automaticallyAdjustsScrollViewInsets="NO" id="G9U-qo-00F" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="centered" itemSpacing="36" itemWidth="60" id="FnO-av-MBl">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="centered" itemSpacing="30" itemWidth="60" id="FnO-av-MBl">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.1450980392" green="0.23103320599999999" blue="0.41584056619999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.1453614533" green="0.23530036209999999" blue="0.41938996319999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="1"/>
-                        <color key="barTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <tabBarAppearance key="standardAppearance" backgroundEffect="systemThinMaterial" backgroundImageContentMode="scaleToFill" stackedItemPositioning="fill"/>
+                        <color key="tintColor" red="0.16620052708645153" green="0.40306201893976634" blue="0.8771048798053096" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <tabBarAppearance key="standardAppearance" backgroundImageContentMode="bottom" stackedItemSpacing="0.0">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="selectionIndicatorTintColor" red="0.16197601540000001" green="0.3928169239" blue="0.85481048729999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </tabBarAppearance>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
-                        <segue destination="ydb-yZ-Zbg" kind="relationship" relationship="viewControllers" id="NIR-cH-2dw"/>
-                        <segue destination="yB5-gJ-y2L" kind="relationship" relationship="viewControllers" id="Cq4-2j-Ds4"/>
-                        <segue destination="ZDt-6d-GTQ" kind="relationship" relationship="viewControllers" id="H6t-Ql-89V"/>
-                        <segue destination="PBr-ej-k56" kind="relationship" relationship="viewControllers" id="caL-O1-uFG"/>
+                        <segue destination="K2s-Fe-mK5" kind="relationship" relationship="viewControllers" id="OUS-ym-YGq"/>
+                        <segue destination="PBr-ej-k56" kind="relationship" relationship="viewControllers" id="NnF-ia-eX4"/>
+                        <segue destination="yB5-gJ-y2L" kind="relationship" relationship="viewControllers" id="nWG-iX-CvX"/>
+                        <segue destination="ZDt-6d-GTQ" kind="relationship" relationship="viewControllers" id="y96-YC-a5h"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G3x-aF-grl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -188,14 +334,21 @@
             <point key="canvasLocation" x="-1822" y="-561"/>
         </scene>
     </scenes>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
-        <image name="Pasted Graphic 1" width="698" height="30"/>
+        <image name="ChefJob" width="310" height="218"/>
+        <image name="SoftwareJob" width="352" height="279"/>
         <image name="arrow.right" catalog="system" width="128" height="95"/>
+        <image name="engineerjob" width="430" height="242"/>
         <image name="gear" catalog="system" width="128" height="122"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="teacherJob" width="334" height="248"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

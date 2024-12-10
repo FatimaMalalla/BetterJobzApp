@@ -42,7 +42,12 @@ class SignupViewController: UIViewController {
         guard let username = FirstNameTextField.text ,
               let email =  EmailTextField.text,
               let password = PasswordTextField.text,
-              !username.isEmpty && !email.isEmpty && !password.isEmpty
+              let FirstName = FirstNameTextField.text,
+              let LastName = LastNameTextField.text,
+              let Dob = DobTextField.text,
+              let Gender = GenderTextField.text,
+              let PhoneNumber = PhoneNumberTextField.text,
+              !username.isEmpty && !email.isEmpty && !password.isEmpty && !FirstName.isEmpty && !LastName.isEmpty && !Dob.isEmpty && !Gender.isEmpty && !PhoneNumber.isEmpty
         else{
             let alert = UIAlertController(title: "Missing Field Data", message: "Please Fill in all the fields", preferredStyle: .alert)
             
@@ -62,11 +67,7 @@ class SignupViewController: UIViewController {
                 return
             }
         })
-
     }
-       
-    
-    
     private func showAlert(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default))
