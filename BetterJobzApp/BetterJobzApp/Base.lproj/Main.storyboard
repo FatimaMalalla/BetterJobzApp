@@ -464,11 +464,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l5d-Cs-rbU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1065" y="713"/>
+            <point key="canvasLocation" x="1111" y="734"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="1s9-df-hAP"/>
+        <segue reference="aEh-GA-beQ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Pasted Graphic" width="344" height="344"/>
