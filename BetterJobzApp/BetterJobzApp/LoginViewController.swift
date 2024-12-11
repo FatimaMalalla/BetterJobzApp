@@ -14,7 +14,11 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Check if a user is already logged in
+                if Auth.auth().currentUser != nil {
+                    // Navigate directly to the home screen
+                    self.performSegue(withIdentifier: "showDashboardSegue", sender: nil)
+                }
     }
     
     @IBOutlet weak var Username: UITextField!

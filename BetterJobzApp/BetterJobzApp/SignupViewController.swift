@@ -60,13 +60,40 @@ class SignupViewController: UIViewController {
         FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password, completion: {
             Result, error in
             guard error == nil else {
-                let alert = UIAlertController(title: "Error", message: "SignUp Failed", preferredStyle: .alert)
+                let alert = UIAlertController(title:"Error", message: "SignUp Failed", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "OK", style: .cancel))
                 self.present(alert, animated: true)
                 
                 return
             }
         })
+//        
+//        let ref = Database.database().reference()
+//        
+//        guard let user = Result?.user else {
+//            self.showAlert(title: "Error", message: "User creation failed.")
+//            return
+//        }
+//        let uid = user.uid
+//
+//        
+//        let userInfo: [String: Any] = [
+//             "Email": email,
+//             "FirstName": FirstName,
+//             "LastName": LastName,
+//             "Dob": Dob,
+//             "Gender": Gender,
+//             "PhoneNumber": PhoneNumber
+//         ]
+//
+//         ref.child("users").child(uid).setValue(userInfo) { error, _ in
+//             if let error = error {
+//                 self.showAlert(title: "Error", message: "Failed to save user data: \(error.localizedDescription)")
+//                 return
+//             }
+//
+//             self.showAlert(title: "Success", message: "Account created successfully!")
+//         }
     }
     private func showAlert(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)

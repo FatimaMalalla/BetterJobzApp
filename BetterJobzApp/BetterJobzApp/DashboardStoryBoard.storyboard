@@ -254,15 +254,33 @@ Job Available</string>
             </objects>
             <point key="canvasLocation" x="-448.09160305343511" y="-685.21126760563379"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="m59-i3-xW3">
             <objects>
-                <viewController id="ZDt-6d-GTQ" sceneMemberID="viewController">
+                <viewController id="ZDt-6d-GTQ" customClass="SettingsViewController" customModule="BetterJobzApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GqA-KQ-a5V">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adv-Kh-K8a">
+                                <rect key="frame" x="156" y="231" width="81" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="signout">
+                                    <color key="baseBackgroundColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="0.88014837609999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="signout:" destination="ZDt-6d-GTQ" eventType="touchUpInside" id="F2b-g1-9PZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ee1-Wj-SEx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="adv-Kh-K8a" firstAttribute="top" secondItem="ee1-Wj-SEx" secondAttribute="top" constant="172" id="F0Q-C2-Mbp"/>
+                            <constraint firstItem="adv-Kh-K8a" firstAttribute="leading" secondItem="ee1-Wj-SEx" secondAttribute="leading" constant="156" id="cfO-tH-x0d"/>
+                            <constraint firstItem="ee1-Wj-SEx" firstAttribute="bottom" secondItem="adv-Kh-K8a" secondAttribute="bottom" constant="503" id="p5n-v9-X9C"/>
+                            <constraint firstItem="ee1-Wj-SEx" firstAttribute="trailing" secondItem="adv-Kh-K8a" secondAttribute="trailing" constant="156" id="stL-Ai-W79"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="gear" catalog="system" selectedImage="gear" id="KXD-Aj-Pwc">
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

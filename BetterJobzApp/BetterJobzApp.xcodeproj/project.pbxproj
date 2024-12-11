@@ -16,6 +16,7 @@
 		C3A836132CFC6C0600A1AFB2 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = C3A836122CFC6C0600A1AFB2 /* FirebaseAnalytics */; };
 		C3A836152CFC6C0A00A1AFB2 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C3A836142CFC6C0A00A1AFB2 /* FirebaseAuth */; };
 		CF03F3B92D0967E400A72ECA /* CVToolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF03F3B82D0967E400A72ECA /* CVToolViewController.swift */; };
+		CF18169B2D097C8C00D0162A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF18169A2D097C8C00D0162A /* SettingsViewController.swift */; };
 		D43E517B2CF5EA3600916325 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E517A2CF5EA3600916325 /* AppDelegate.swift */; };
 		D43E517D2CF5EA3600916325 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E517C2CF5EA3600916325 /* SceneDelegate.swift */; };
 		D43E517F2CF5EA3600916325 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E517E2CF5EA3600916325 /* ViewController.swift */; };
@@ -58,6 +59,7 @@
 		C311BCD52CFF3E980063F268 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C31E7C1C2D056C090022CD6B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CF03F3B82D0967E400A72ECA /* CVToolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVToolViewController.swift; sourceTree = "<group>"; };
+		CF18169A2D097C8C00D0162A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		D43E51772CF5EA3600916325 /* BetterJobzApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterJobzApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D43E517A2CF5EA3600916325 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D43E517C2CF5EA3600916325 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -143,23 +145,24 @@
 		D43E51792CF5EA3600916325 /* BetterJobzApp */ = {
 			isa = PBXGroup;
 			children = (
-				CF03F3B82D0967E400A72ECA /* CVToolViewController.swift */,
 				D43E517A2CF5EA3600916325 /* AppDelegate.swift */,
 				D43E517C2CF5EA3600916325 /* SceneDelegate.swift */,
 				D43E517E2CF5EA3600916325 /* ViewController.swift */,
+				D43E51852CF5EA3800916325 /* LaunchScreen.storyboard */,
+				D43E51B82CF6064200916325 /* DashboardStoryBoard.storyboard */,
+				CF18169A2D097C8C00D0162A /* SettingsViewController.swift */,
+				D43E51AC2CF5EE2000916325 /* CVtoolStoryboard.storyboard */,
+				D43E51802CF5EA3600916325 /* Main.storyboard */,
+				CF03F3B82D0967E400A72ECA /* CVToolViewController.swift */,
 				C311BCD52CFF3E980063F268 /* LoginViewController.swift */,
 				C311BCD32CFF3E0E0063F268 /* SignupViewController.swift */,
-				D43E51852CF5EA3800916325 /* LaunchScreen.storyboard */,
-				D43E51802CF5EA3600916325 /* Main.storyboard */,
-				D43E51B82CF6064200916325 /* DashboardStoryBoard.storyboard */,
-				D43E51AC2CF5EE2000916325 /* CVtoolStoryboard.storyboard */,
-				D43E51AE2CF5EE2F00916325 /* ProfileStoryBoard.storyboard */,
-				D43E51B02CF5EE4300916325 /* SettingsStoryBoard.storyboard */,
-				D43E51B22CF5EEC800916325 /* EmpDashboardStroryBoard.storyboard */,
-				D43E51B42CF5EEE500916325 /* EmpProfileStoryBoard.storyboard */,
-				D43E51B62CF5EF0900916325 /* JobPostingStoryboard.storyboard */,
 				D43E51BE2CF614D900916325 /* DashboardViewController.swift */,
 				D43E51BA2CF60FBD00916325 /* GradientBg.swift */,
+				D43E51AE2CF5EE2F00916325 /* ProfileStoryBoard.storyboard */,
+				D43E51B02CF5EE4300916325 /* SettingsStoryBoard.storyboard */,
+				D43E51B42CF5EEE500916325 /* EmpProfileStoryBoard.storyboard */,
+				D43E51B22CF5EEC800916325 /* EmpDashboardStroryBoard.storyboard */,
+				D43E51B62CF5EF0900916325 /* JobPostingStoryboard.storyboard */,
 				D43E51832CF5EA3800916325 /* Assets.xcassets */,
 				C31E7C1C2D056C090022CD6B /* GoogleService-Info.plist */,
 				D43E51882CF5EA3800916325 /* Info.plist */,
@@ -341,6 +344,7 @@
 				D43E51BF2CF614D900916325 /* DashboardViewController.swift in Sources */,
 				D43E51BB2CF60FBD00916325 /* GradientBg.swift in Sources */,
 				D43E517D2CF5EA3600916325 /* SceneDelegate.swift in Sources */,
+				CF18169B2D097C8C00D0162A /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
