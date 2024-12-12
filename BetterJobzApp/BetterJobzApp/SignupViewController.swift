@@ -1,16 +1,8 @@
-//
-//  SignupViewController.swift
-//  BetterJobzApp
-//
-//  Created by BP-36-201-01 on 03/12/2024.
-//
-
 import UIKit
 import FirebaseAuth
 import FirebaseDatabase
 
 class SignupViewController: UIViewController {
-    
   
     @IBOutlet weak var FirstNameTextField: UITextField!
     @IBOutlet weak var LastNameTextField: UITextField!
@@ -22,10 +14,8 @@ class SignupViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
       
-    
     @IBAction func ResetFields(_ sender: Any) {
         FirstNameTextField.text = ""
         LastNameTextField.text = ""
@@ -39,76 +29,99 @@ class SignupViewController: UIViewController {
 
     @IBAction func CreateAccount(_ sender: Any) {
         
-        guard let username = FirstNameTextField.text ,
-              let email =  EmailTextField.text,
-              let password = PasswordTextField.text,
-              let FirstName = FirstNameTextField.text,
-              let LastName = LastNameTextField.text,
-              let Dob = DobTextField.text,
-              let Gender = GenderTextField.text,
-              let PhoneNumber = PhoneNumberTextField.text,
-              !username.isEmpty && !email.isEmpty && !password.isEmpty && !FirstName.isEmpty && !LastName.isEmpty && !Dob.isEmpty && !Gender.isEmpty && !PhoneNumber.isEmpty
-        else{
-            let alert = UIAlertController(title: "Missing Field Data", message: "Please Fill in all the fields", preferredStyle: .alert)
-            
-            alert.addAction(UIAlertAction(title: "OK", style: .cancel))
-            self.present(alert, animated: true)
-            
+        // Validate fields
+        guard let firstName = FirstNameTextField.text, !firstName.isEmpty else {
+            showAlert(title: "Validation Error", message: "First Name is required.")
             return
         }
         
-        FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password, completion: {
-            Result, error in
-            guard error == nil else {
-                let alert = UIAlertController(title:"Error", message: "SignUp Failed", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "OK", style: .cancel))
-                self.present(alert, animated: true)
-                
+        guard let lastName = LastNameTextField.text, !lastName.isEmpty else {
+            showAlert(title: "Validation Error", message: "Last Name is required.")
+            return
+        }
+        
+        guard let email = EmailTextField.text, isValidEmail(email) else {
+            showAlert(title: "Validation Error", message: "Enter a valid email address.")
+            return
+        }
+        
+        guard let password = PasswordTextField.text, isValidPassword(password) else {
+            showAlert(title: "Validation Error", message: "Password must be at least 6 characters.")
+            return
+        }
+        
+        guard let dob = DobTextField.text, !dob.isEmpty else {
+            showAlert(title: "Validation Error", message: "Date of Birth is required.")
+            return
+        }
+        
+        guard let gender = GenderTextField.text, !gender.isEmpty else {
+            showAlert(title: "Validation Error", message: "Gender is required.")
+            return
+        }
+        
+        guard let phoneNumber = PhoneNumberTextField.text, isValidPhoneNumber(phoneNumber) else {
+            showAlert(title: "Validation Error", message: "Enter a valid phone number.")
+            return
+        }
+
+        // Firebase Authentication
+        FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password, completion: { [weak self] Result, error in
+            guard let self = self else { return }
+            
+            if let error = error {
+                self.showAlert(title: "Error", message: "SignUp Failed: \(error.localizedDescription)")
                 return
             }
+            
+            // Save user details to Firebase Realtime Database
+            guard let user = Result?.user else {
+                self.showAlert(title: "Error", message: "User creation failed.")
+                return
+            }
+            
+            let uid = user.uid
+            let ref = Database.database().reference()
+            
+            let userInfo: [String: Any] = [
+                "Email": email,
+                "FirstName": firstName,
+                "LastName": lastName,
+                "Dob": dob,
+                "Gender": gender,
+                "PhoneNumber": phoneNumber
+            ]
+            
+            ref.child("users").child(uid).setValue(userInfo) { error, _ in
+                if let error = error {
+                    self.showAlert(title: "Error", message: "Failed to save user data: \(error.localizedDescription)")
+                    return
+                }
+                
+                self.showAlert(title: "Success", message: "Account created successfully!")
+            }
         })
-//        
-//        let ref = Database.database().reference()
-//        
-//        guard let user = Result?.user else {
-//            self.showAlert(title: "Error", message: "User creation failed.")
-//            return
-//        }
-//        let uid = user.uid
-//
-//        
-//        let userInfo: [String: Any] = [
-//             "Email": email,
-//             "FirstName": FirstName,
-//             "LastName": LastName,
-//             "Dob": Dob,
-//             "Gender": Gender,
-//             "PhoneNumber": PhoneNumber
-//         ]
-//
-//         ref.child("users").child(uid).setValue(userInfo) { error, _ in
-//             if let error = error {
-//                 self.showAlert(title: "Error", message: "Failed to save user data: \(error.localizedDescription)")
-//                 return
-//             }
-//
-//             self.showAlert(title: "Success", message: "Account created successfully!")
-//         }
     }
+
+    // Helper Functions for Validation
+    private func isValidEmail(_ email: String) -> Bool {
+        let emailRegex = "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}$"
+        return NSPredicate(format: "SELF MATCHES %@", emailRegex).evaluate(with: email)
+    }
+    
+    private func isValidPassword(_ password: String) -> Bool {
+        return password.count >= 6
+    }
+    
+    private func isValidPhoneNumber(_ phoneNumber: String) -> Bool {
+        let phoneRegex = "^[0-9]{8}$"
+        return NSPredicate(format: "SELF MATCHES %@", phoneRegex).evaluate(with: phoneNumber)
+    }
+    
     private func showAlert(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default))
         present(alert, animated: true)
     }
+    
 }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-
