@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BetterJobzApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="BetterJobzApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="GradientView" customModule="BetterJobzApp" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -80,6 +80,7 @@
         <!--Login View Controller-->
         <scene sceneID="gom-wP-E1N">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="acM-Su-wnG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="PGc-jp-q97" customClass="LoginViewController" customModule="BetterJobzApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cix-xl-2RH" customClass="GradientView" customModule="BetterJobzApp" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -181,9 +182,8 @@
                         <segue destination="6Ae-h1-kys" kind="presentation" identifier="showDashboardSegue" modalPresentationStyle="fullScreen" id="rgm-7d-nwF"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="acM-Su-wnG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1922.9007633587785" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="1924" y="-14"/>
         </scene>
         <!--DashboardStoryBoard-->
         <scene sceneID="Jc9-RB-OnO">
@@ -198,6 +198,7 @@
         <!--Navigation Controller-->
         <scene sceneID="B9c-hT-Cj2">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JRD-Mg-FE9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tRr-ft-pfd" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="DVg-Cw-CZ7">
@@ -209,7 +210,6 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2p3-vU-2Ep"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JRD-Mg-FE9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138.1679389312977" y="-2.1126760563380285"/>
         </scene>
@@ -468,7 +468,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="aEh-GA-beQ"/>
+        <segue reference="1s9-df-hAP"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Pasted Graphic" width="344" height="344"/>
@@ -476,7 +476,7 @@
             <color red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
