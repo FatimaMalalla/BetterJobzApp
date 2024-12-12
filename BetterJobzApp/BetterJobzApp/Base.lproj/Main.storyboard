@@ -109,7 +109,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Admin@gmail.com" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="EkM-LW-vcn">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="EkM-LW-vcn">
                                         <rect key="frame" x="0.0" y="121.33333333333331" width="290" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="Wif-ql-tiG"/>
@@ -128,7 +128,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password123" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ycX-BL-zPI">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ycX-BL-zPI">
                                         <rect key="frame" x="0.0" y="203.66666666666669" width="290" height="32.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="username"/>
@@ -391,10 +391,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vdb-yK-gBa">
                                                         <rect key="frame" x="0.0" y="0.0" width="165.33333333333334" height="34.333333333333336"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="34.333333333333336" id="3Ql-8D-FT7"/>
-                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34.333333333333336" id="Crc-jO-qOA"/>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="165.33333333333334" id="fd3-eX-Krp"/>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="gFK-KJ-B8F"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Reset">
@@ -407,9 +404,6 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mqZ-e0-bjk">
                                                         <rect key="frame" x="170.33333333333337" y="0.0" width="190.66666666666663" height="34.333333333333336"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="34.333333333333336" id="EYU-1r-Bpt"/>
-                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34.333333333333336" id="Vvo-PV-BgO"/>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="190.66666666666663" id="Xk4-q7-c5o"/>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="190.66666666666663" id="g8W-3b-5hN"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
@@ -435,7 +429,6 @@
                             <constraint firstItem="Y0y-ot-9zt" firstAttribute="leading" secondItem="qNa-o5-MXl" secondAttribute="leading" constant="16" id="5aw-W6-nsE"/>
                             <constraint firstItem="qNa-o5-MXl" firstAttribute="trailing" secondItem="Y0y-ot-9zt" secondAttribute="trailing" constant="16" id="bdo-Vo-zTq"/>
                             <constraint firstItem="Y0y-ot-9zt" firstAttribute="top" secondItem="qNa-o5-MXl" secondAttribute="top" constant="87" id="dnV-gI-RKR"/>
-                            <constraint firstItem="qNa-o5-MXl" firstAttribute="bottom" secondItem="Y0y-ot-9zt" secondAttribute="bottom" constant="155.66999999999999" id="fxA-1C-Jgs"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XPg-ib-wIy"/>
@@ -455,14 +448,14 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="1s9-df-hAP"/>
+        <segue reference="aEh-GA-beQ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="scrollViewTexturedBackgroundColor">
             <color red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray2Color">
-            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

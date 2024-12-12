@@ -11,6 +11,7 @@
         <!--About Me View Controller-->
         <scene sceneID="SzU-TV-0Ln">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LnN-77-Kam" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="AboutMeViewController" id="nZd-Mk-blo" customClass="AboutMeViewController" customModule="BetterJobzApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0cR-ue-lhU">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
@@ -26,6 +27,9 @@
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="cancelBttnTapped:" destination="nZd-Mk-blo" eventType="touchUpInside" id="Dco-1T-CL0"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zaL-nH-YcR">
                                         <rect key="frame" x="182.66666666666663" y="0.0" width="178.33333333333337" height="39"/>
@@ -34,6 +38,9 @@
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" red="0.1801219583" green="0.29667085409999999" blue="0.5255519152" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="saveBttnTapped:" destination="nZd-Mk-blo" eventType="touchUpInside" id="UHD-G2-RWS"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -47,6 +54,14 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FlU-VL-Bbg">
                                 <rect key="frame" x="16" y="63" width="361" height="620"/>
                                 <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="keF-Vx-HjV">
+                                        <rect key="frame" x="8" y="8" width="345" height="604"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap to add details ..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIk-Ik-zEB">
                                         <rect key="frame" x="8" y="300" width="345" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -77,8 +92,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4lR-Yt-1jQ"/>
+                    <connections>
+                        <outlet property="placeholderLabel" destination="YIk-Ik-zEB" id="m2C-E8-C9H"/>
+                        <outlet property="textView" destination="keF-Vx-HjV" id="l5k-Md-MVO"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LnN-77-Kam" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2559.5419847328244" y="9.8591549295774659"/>
         </scene>
@@ -227,6 +245,7 @@
                                             <connections>
                                                 <action selector="GenerateCV:" destination="QHu-2H-xcN" eventType="touchUpInside" id="lcn-Jy-bGA"/>
                                                 <action selector="GenerateCV:" destination="pxs-Y0-fSM" eventType="touchUpInside" id="y75-vk-nxA"/>
+                                                <action selector="GenerateCVtool:" destination="pxs-Y0-fSM" eventType="touchUpInside" id="JOY-pu-0kD"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -257,11 +276,23 @@
                                     </constraints>
                                 </view>
                             </tableView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TYw-Ei-q6o">
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYw-Ei-q6o">
                                 <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="CV Tool" id="hg7-VH-7fQ"/>
+                                    <navigationItem title="CV Tool" id="hg7-VH-7fQ">
+                                        <barButtonItem key="rightBarButtonItem" style="plain" id="Dzl-Ak-trZ">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="5vl-qV-1Ex">
+                                                <rect key="frame" x="290" y="5" width="87" height="34.333333333333336"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Save"/>
+                                                <connections>
+                                                    <action selector="SaveBttnTapped:" destination="pxs-Y0-fSM" eventType="touchUpInside" id="ihl-FX-qag"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                         </subviews>
@@ -269,16 +300,23 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="paperclip" catalog="system" selectedImage="paperclip" id="oP1-jw-RUd"/>
+                    <connections>
+                        <outlet property="educationTextField" destination="2U9-6a-JVu" id="n8h-Yi-I2S"/>
+                        <outlet property="emailTextField" destination="P31-cf-mpa" id="STz-K2-VZw"/>
+                        <outlet property="languageTextField" destination="N1U-vY-JZL" id="1Gk-cW-zht"/>
+                        <outlet property="occupationTextField" destination="Li6-fP-GgM" id="feL-dd-Eyl"/>
+                        <outlet property="phoneNumberTextField" destination="qmG-UM-W07" id="h3f-xi-wo3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JKW-no-WjL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="QHu-2H-xcN" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1686.2595419847328" y="9.8591549295774659"/>
         </scene>
-        <!--View Controller-->
+        <!--WorkEXP View Controller-->
         <scene sceneID="A6J-Cx-loa">
             <objects>
-                <viewController id="CkA-Ac-eOu" sceneMemberID="viewController">
+                <viewController id="CkA-Ac-eOu" customClass="WorkEXPViewController" customModule="BetterJobzApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="itd-7p-0OJ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -290,65 +328,237 @@
                                     <navigationItem title="Work Experience" id="onj-At-vc8"/>
                                 </items>
                             </navigationBar>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add Work Experience" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yLp-Xb-Rau">
+                                <rect key="frame" x="85" y="60" width="223" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7c-tg-79s">
+                                <rect key="frame" x="9" y="59" width="74" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Delete">
+                                    <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="deleteButtonTapped:" destination="CkA-Ac-eOu" eventType="touchUpInside" id="NsY-3P-ecV"/>
+                                    <action selector="deleteButtonTapped:" destination="7Uz-cE-3rN" eventType="touchUpInside" id="vmj-oc-bhB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3g-rm-gD9">
+                                <rect key="frame" x="322" y="60" width="55" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Add"/>
+                                <connections>
+                                    <action selector="addSkillTapped:" destination="7Uz-cE-3rN" eventType="touchUpInside" id="9FF-il-jz4"/>
+                                    <action selector="addWorkExperienceTapped:" destination="CkA-Ac-eOu" eventType="touchUpInside" id="JNl-Gr-lff"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="NtH-bq-7ij">
+                                <rect key="frame" x="16" y="102" width="361" height="720"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WorkExperienceCell" id="I6w-xy-XjO">
+                                        <rect key="frame" x="0.0" y="50" width="361" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="I6w-xy-XjO" id="Wb5-7u-5uC">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GYu-b1-7g2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="4Yg-Sj-7YA"/>
+                    <connections>
+                        <outlet property="workExperienceTableView" destination="NtH-bq-7ij" id="1FY-Va-cl1"/>
+                        <outlet property="workExperienceTextField" destination="yLp-Xb-Rau" id="uKp-78-PHZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="omF-7s-Dgi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3387" y="747"/>
+            <point key="canvasLocation" x="3275.5725190839694" y="779.57746478873241"/>
         </scene>
-        <!--View Controller-->
+        <!--Interests View Controller-->
         <scene sceneID="lNb-3t-6ZV">
             <objects>
-                <viewController id="eeW-Q8-Gi8" sceneMemberID="viewController">
+                <viewController id="eeW-Q8-Gi8" customClass="InterestsViewController" customModule="BetterJobzApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="II3-Zl-aI3">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fY2-S2-sly">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fY2-S2-sly">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="TWK-oM-gsg"/>
+                                </constraints>
                                 <items>
                                     <navigationItem title="Interests" id="QhM-EF-bTM"/>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSN-hv-dhr">
+                                <rect key="frame" x="316" y="65" width="54.666666666666686" height="34"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Add"/>
+                                <connections>
+                                    <action selector="addInterestTapped:" destination="eeW-Q8-Gi8" eventType="touchUpInside" id="cFh-Za-KD6"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Sae-l5-fT7">
+                                <rect key="frame" x="16" y="107" width="361" height="715"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="InterestCell" id="Gww-DT-KLg">
+                                        <rect key="frame" x="0.0" y="50" width="361" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Gww-DT-KLg" id="Ipi-br-9lY">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="run-tk-0wl">
+                                <rect key="frame" x="17" y="65" width="76" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="76" id="LJc-Jf-AB6"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Delete">
+                                    <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="deleteButtonTapped:" destination="eeW-Q8-Gi8" eventType="touchUpInside" id="kKK-u5-bJa"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add Interests " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="keU-ig-qvZ">
+                                <rect key="frame" x="85" y="65" width="223" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="y3l-Wh-a8Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="boD-OC-fKn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SSN-hv-dhr" firstAttribute="leading" secondItem="keU-ig-qvZ" secondAttribute="trailing" constant="8" id="1e0-MA-Cwu"/>
+                            <constraint firstItem="Sae-l5-fT7" firstAttribute="leading" secondItem="boD-OC-fKn" secondAttribute="leading" constant="16" id="3C8-nU-uOB"/>
+                            <constraint firstItem="keU-ig-qvZ" firstAttribute="top" secondItem="SSN-hv-dhr" secondAttribute="top" id="3uB-dU-lE6"/>
+                            <constraint firstItem="keU-ig-qvZ" firstAttribute="top" secondItem="run-tk-0wl" secondAttribute="top" id="4On-iU-e3k"/>
+                            <constraint firstAttribute="trailing" secondItem="fY2-S2-sly" secondAttribute="trailing" id="Bgd-Qb-e1U"/>
+                            <constraint firstItem="run-tk-0wl" firstAttribute="leading" secondItem="boD-OC-fKn" secondAttribute="leading" constant="17" id="EKu-pl-xN6"/>
+                            <constraint firstItem="fY2-S2-sly" firstAttribute="top" secondItem="boD-OC-fKn" secondAttribute="top" id="JSC-iN-U40"/>
+                            <constraint firstItem="fY2-S2-sly" firstAttribute="leading" secondItem="II3-Zl-aI3" secondAttribute="leading" id="apX-cb-2ye"/>
+                            <constraint firstItem="keU-ig-qvZ" firstAttribute="top" secondItem="fY2-S2-sly" secondAttribute="bottom" constant="21" id="iml-n0-TfC"/>
+                            <constraint firstItem="keU-ig-qvZ" firstAttribute="centerX" secondItem="fY2-S2-sly" secondAttribute="centerX" id="jjB-bV-U3C"/>
+                            <constraint firstItem="keU-ig-qvZ" firstAttribute="centerY" secondItem="SSN-hv-dhr" secondAttribute="centerY" id="p55-TC-c2J"/>
+                            <constraint firstItem="keU-ig-qvZ" firstAttribute="leading" secondItem="boD-OC-fKn" secondAttribute="leading" constant="85" id="qjA-yt-eJM"/>
+                            <constraint firstItem="boD-OC-fKn" firstAttribute="trailing" secondItem="Sae-l5-fT7" secondAttribute="trailing" constant="16" id="s9y-BT-hDm"/>
+                            <constraint firstItem="boD-OC-fKn" firstAttribute="bottom" secondItem="Sae-l5-fT7" secondAttribute="bottom" constant="20" id="vYp-ws-e7W"/>
+                            <constraint firstItem="keU-ig-qvZ" firstAttribute="centerY" secondItem="run-tk-0wl" secondAttribute="centerY" id="wjE-1d-TOR"/>
+                            <constraint firstItem="Sae-l5-fT7" firstAttribute="top" secondItem="keU-ig-qvZ" secondAttribute="bottom" constant="8" symbolic="YES" id="xzx-de-pfC"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cuC-0s-lYA"/>
+                    <connections>
+                        <outlet property="interestTextField" destination="keU-ig-qvZ" id="gbB-N6-hnu"/>
+                        <outlet property="interestsTableView" destination="Sae-l5-fT7" id="FeS-W8-7zy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BmR-0P-CWp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1686" y="908"/>
+            <point key="canvasLocation" x="1684.7328244274809" y="779.57746478873241"/>
         </scene>
-        <!--View Controller-->
+        <!--Skills View Controller-->
         <scene sceneID="bbp-rU-aif">
             <objects>
-                <viewController id="7Uz-cE-3rN" sceneMemberID="viewController">
+                <viewController id="7Uz-cE-3rN" customClass="SkillsViewController" customModule="BetterJobzApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rdi-ep-Rif">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K9s-HV-PZv">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K9s-HV-PZv">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Skills" id="IRj-Js-TJ8"/>
                                 </items>
                             </navigationBar>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add Skills" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b8N-yE-S0f">
+                                <rect key="frame" x="80" y="59" width="233" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3pQ-nN-isO">
+                                <rect key="frame" x="322" y="59" width="55" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Add"/>
+                                <connections>
+                                    <action selector="addSkillTapped:" destination="7Uz-cE-3rN" eventType="touchUpInside" id="mDD-pW-2TH"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="bhk-HQ-xvL">
+                                <rect key="frame" x="16" y="101" width="361" height="721"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SkillCell" id="10C-58-jkf">
+                                        <rect key="frame" x="0.0" y="50" width="361" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="10C-58-jkf" id="eDH-vY-YbW">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yBc-rN-ht7">
+                                <rect key="frame" x="5" y="59" width="74" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Delete">
+                                    <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="deleteButtonTapped:" destination="7Uz-cE-3rN" eventType="touchUpInside" id="iVB-yn-P4m"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ypb-hj-PDf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bhk-HQ-xvL" firstAttribute="leading" secondItem="ypb-hj-PDf" secondAttribute="leading" constant="16" id="0u2-uJ-QgC"/>
+                            <constraint firstItem="K9s-HV-PZv" firstAttribute="leading" secondItem="Rdi-ep-Rif" secondAttribute="leading" id="7xZ-6n-BFp"/>
+                            <constraint firstItem="K9s-HV-PZv" firstAttribute="centerX" secondItem="b8N-yE-S0f" secondAttribute="centerX" id="HaI-jE-Phn"/>
+                            <constraint firstItem="K9s-HV-PZv" firstAttribute="centerX" secondItem="bhk-HQ-xvL" secondAttribute="centerX" id="S5q-VK-I3S"/>
+                            <constraint firstItem="3pQ-nN-isO" firstAttribute="centerY" secondItem="b8N-yE-S0f" secondAttribute="centerY" id="VyT-Tt-hf6"/>
+                            <constraint firstItem="3pQ-nN-isO" firstAttribute="top" secondItem="K9s-HV-PZv" secondAttribute="bottom" constant="15" id="W9P-CQ-Uh4"/>
+                            <constraint firstItem="3pQ-nN-isO" firstAttribute="top" secondItem="b8N-yE-S0f" secondAttribute="top" id="X4d-i9-MtD"/>
+                            <constraint firstItem="3pQ-nN-isO" firstAttribute="leading" secondItem="b8N-yE-S0f" secondAttribute="trailing" constant="9" id="c4Z-ez-AGS"/>
+                            <constraint firstItem="3pQ-nN-isO" firstAttribute="baseline" secondItem="yBc-rN-ht7" secondAttribute="baseline" id="dxs-2S-6jY"/>
+                            <constraint firstItem="yBc-rN-ht7" firstAttribute="leading" secondItem="ypb-hj-PDf" secondAttribute="leading" constant="5" id="ec1-mx-dwR"/>
+                            <constraint firstItem="ypb-hj-PDf" firstAttribute="bottom" secondItem="bhk-HQ-xvL" secondAttribute="bottom" constant="20" id="fWW-1X-xAC"/>
+                            <constraint firstItem="3pQ-nN-isO" firstAttribute="top" secondItem="Rdi-ep-Rif" secondAttribute="top" constant="59" id="h4C-xU-th1"/>
+                            <constraint firstItem="3pQ-nN-isO" firstAttribute="trailing" secondItem="bhk-HQ-xvL" secondAttribute="trailing" id="ihd-wK-f5m"/>
+                            <constraint firstItem="ypb-hj-PDf" firstAttribute="trailing" secondItem="bhk-HQ-xvL" secondAttribute="trailing" constant="16" id="naf-aO-5wd"/>
+                            <constraint firstItem="K9s-HV-PZv" firstAttribute="top" secondItem="ypb-hj-PDf" secondAttribute="top" id="qwY-zC-iNs"/>
+                            <constraint firstItem="bhk-HQ-xvL" firstAttribute="top" secondItem="3pQ-nN-isO" secondAttribute="bottom" constant="7" id="rPU-Ku-YDP"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fFR-XV-Nz1"/>
+                    <connections>
+                        <outlet property="skillTextField" destination="b8N-yE-S0f" id="Oif-3M-jLo"/>
+                        <outlet property="skillsTableView" destination="bhk-HQ-xvL" id="mve-wT-l2y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vey-LC-ilg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2560" y="755"/>
+            <point key="canvasLocation" x="2502" y="780"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="B9X-dp-uut">
@@ -374,6 +584,9 @@
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

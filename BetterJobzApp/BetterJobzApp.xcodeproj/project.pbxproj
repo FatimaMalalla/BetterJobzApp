@@ -11,13 +11,16 @@
 		C311BCD42CFF3E0E0063F268 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C311BCD32CFF3E0E0063F268 /* SignupViewController.swift */; };
 		C311BCD62CFF3E980063F268 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C311BCD52CFF3E980063F268 /* LoginViewController.swift */; };
 		C31E7C1D2D056C090022CD6B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C31E7C1C2D056C090022CD6B /* GoogleService-Info.plist */; };
+		C345BACC2D0B351900205693 /* CVToolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C345BACB2D0B351900205693 /* CVToolViewController.swift */; };
+		C345BACE2D0B3A8700205693 /* InterestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C345BACD2D0B3A8700205693 /* InterestsViewController.swift */; };
+		C345BAD42D0B403200205693 /* SkillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C345BAD32D0B403200205693 /* SkillsViewController.swift */; };
+		C345BAD82D0B49F100205693 /* WorkEXPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C345BAD72D0B49F100205693 /* WorkEXPViewController.swift */; };
 		C3A8360F2CFC6BF200A1AFB2 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = C3A8360E2CFC6BF200A1AFB2 /* FirebaseCore */; };
 		C3A836112CFC6C0200A1AFB2 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = C3A836102CFC6C0200A1AFB2 /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		C3A836132CFC6C0600A1AFB2 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = C3A836122CFC6C0600A1AFB2 /* FirebaseAnalytics */; };
 		C3A836152CFC6C0A00A1AFB2 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C3A836142CFC6C0A00A1AFB2 /* FirebaseAuth */; };
 		C3F131EA2D0AF55600861187 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F131E92D0AF55600861187 /* TabBarViewController.swift */; };
 		C3F132002D0B20A900861187 /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F131FF2D0B20A900861187 /* AboutMeViewController.swift */; };
-		CF03F3B92D0967E400A72ECA /* CVToolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF03F3B82D0967E400A72ECA /* CVToolViewController.swift */; };
 		CF18169B2D097C8C00D0162A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF18169A2D097C8C00D0162A /* SettingsViewController.swift */; };
 		D43E517B2CF5EA3600916325 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E517A2CF5EA3600916325 /* AppDelegate.swift */; };
 		D43E517D2CF5EA3600916325 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E517C2CF5EA3600916325 /* SceneDelegate.swift */; };
@@ -60,9 +63,12 @@
 		C311BCD32CFF3E0E0063F268 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		C311BCD52CFF3E980063F268 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C31E7C1C2D056C090022CD6B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C345BACB2D0B351900205693 /* CVToolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVToolViewController.swift; sourceTree = "<group>"; };
+		C345BACD2D0B3A8700205693 /* InterestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestsViewController.swift; sourceTree = "<group>"; };
+		C345BAD32D0B403200205693 /* SkillsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsViewController.swift; sourceTree = "<group>"; };
+		C345BAD72D0B49F100205693 /* WorkEXPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkEXPViewController.swift; sourceTree = "<group>"; };
 		C3F131E92D0AF55600861187 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		C3F131FF2D0B20A900861187 /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
-		CF03F3B82D0967E400A72ECA /* CVToolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVToolViewController.swift; sourceTree = "<group>"; };
 		CF18169A2D097C8C00D0162A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		D43E51772CF5EA3600916325 /* BetterJobzApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterJobzApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D43E517A2CF5EA3600916325 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -157,9 +163,10 @@
 				C3F131E92D0AF55600861187 /* TabBarViewController.swift */,
 				CF18169A2D097C8C00D0162A /* SettingsViewController.swift */,
 				D43E51AC2CF5EE2000916325 /* CVtoolStoryboard.storyboard */,
+				C345BACD2D0B3A8700205693 /* InterestsViewController.swift */,
+				C345BACB2D0B351900205693 /* CVToolViewController.swift */,
 				C3F131FF2D0B20A900861187 /* AboutMeViewController.swift */,
 				D43E51802CF5EA3600916325 /* Main.storyboard */,
-				CF03F3B82D0967E400A72ECA /* CVToolViewController.swift */,
 				C311BCD52CFF3E980063F268 /* LoginViewController.swift */,
 				C311BCD32CFF3E0E0063F268 /* SignupViewController.swift */,
 				D43E51BE2CF614D900916325 /* DashboardViewController.swift */,
@@ -172,6 +179,8 @@
 				D43E51832CF5EA3800916325 /* Assets.xcassets */,
 				C31E7C1C2D056C090022CD6B /* GoogleService-Info.plist */,
 				D43E51882CF5EA3800916325 /* Info.plist */,
+				C345BAD32D0B403200205693 /* SkillsViewController.swift */,
+				C345BAD72D0B49F100205693 /* WorkEXPViewController.swift */,
 			);
 			path = BetterJobzApp;
 			sourceTree = "<group>";
@@ -345,10 +354,13 @@
 				C311BCD62CFF3E980063F268 /* LoginViewController.swift in Sources */,
 				C311BCD42CFF3E0E0063F268 /* SignupViewController.swift in Sources */,
 				D43E517F2CF5EA3600916325 /* ViewController.swift in Sources */,
-				CF03F3B92D0967E400A72ECA /* CVToolViewController.swift in Sources */,
 				D43E517B2CF5EA3600916325 /* AppDelegate.swift in Sources */,
+				C345BACE2D0B3A8700205693 /* InterestsViewController.swift in Sources */,
 				D43E51BF2CF614D900916325 /* DashboardViewController.swift in Sources */,
 				D43E51BB2CF60FBD00916325 /* GradientBg.swift in Sources */,
+				C345BACC2D0B351900205693 /* CVToolViewController.swift in Sources */,
+				C345BAD42D0B403200205693 /* SkillsViewController.swift in Sources */,
+				C345BAD82D0B49F100205693 /* WorkEXPViewController.swift in Sources */,
 				D43E517D2CF5EA3600916325 /* SceneDelegate.swift in Sources */,
 				C3F131EA2D0AF55600861187 /* TabBarViewController.swift in Sources */,
 				CF18169B2D097C8C00D0162A /* SettingsViewController.swift in Sources */,
