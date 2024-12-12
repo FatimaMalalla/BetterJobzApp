@@ -1,30 +1,447 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17150" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17122"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="s0d-6b-0kx">
+        <!--Navigation Controller-->
+        <scene sceneID="ana-4T-Vqc">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mOm-0g-0wv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NYt-TN-qa2">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="WAh-HT-TPL" kind="relationship" relationship="rootViewController" id="j1z-oE-ta8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FYT-XY-icN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.824427480916029" y="3.5211267605633805"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cXa-BH-TL6">
+            <objects>
+                <viewController id="sNB-2J-O7O" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hob-hn-R2z">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BRg-Ve-V1a">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wG8-6C-ocs">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="2500"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Picture1_circular" translatesAutoresizingMaskIntoConstraints="NO" id="5vM-FR-DTa">
+                                                <rect key="frame" x="-82" y="36" width="173" height="207"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Picture1_circular" translatesAutoresizingMaskIntoConstraints="NO" id="Wiv-jX-XJy">
+                                                <rect key="frame" x="332" y="248" width="173" height="207"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Picture1_circular" translatesAutoresizingMaskIntoConstraints="NO" id="Xkp-a3-tv2">
+                                                <rect key="frame" x="-82" y="532" width="173" height="207"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Picture1_circular" translatesAutoresizingMaskIntoConstraints="NO" id="HnT-aC-8wq">
+                                                <rect key="frame" x="-72" y="1265" width="173" height="207"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Picture1_circular" translatesAutoresizingMaskIntoConstraints="NO" id="sS1-mt-h3c">
+                                                <rect key="frame" x="332" y="904" width="173" height="207"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Picture1_circular" translatesAutoresizingMaskIntoConstraints="NO" id="Bk9-dp-xIE">
+                                                <rect key="frame" x="342" y="1615" width="173" height="207"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Picture1_circular" translatesAutoresizingMaskIntoConstraints="NO" id="4hh-lp-NDn">
+                                                <rect key="frame" x="-82" y="1912" width="173" height="207"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Picture1_circular" translatesAutoresizingMaskIntoConstraints="NO" id="jtR-w4-ezD">
+                                                <rect key="frame" x="332" y="2293" width="173" height="207"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy Policy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZp-aB-6uV">
+                                                <rect key="frame" x="138" y="8" width="154" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymu-mR-tRV">
+                                                <rect key="frame" x="52" y="46" width="326" height="2446"/>
+                                                <string key="text">Effective Date: November 13, 2024
+
+BetterJobz (“we,” “our,” or “us”) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use the BetterJobz mobile application (“App”). By using BetterJobz, you agree to the collection and use of information in accordance with this policy.
+
+1. Information We Collect
+
+We collect limited personal information to provide and improve our service to you, including:
+
+	•	Username
+	•	Password
+	•	Email address
+	•	Phone number
+	•	Occupation
+
+2. How We Use Your Information
+
+We use your information to:
+
+	•	Facilitate job search and application processes
+	•	Personalize job recommendations based on your profile
+	•	Communicate with you regarding updates, offers, or any issues with your account
+	•	Enforce our Terms of Service and protect the integrity of our platform
+
+3. Disclosure of Your Information
+
+We may share your information:
+
+	•	With employers when you apply for a job or when your profile matches an employer’s job requirements
+	•	To comply with legal obligations, such as a court order or subpoena, or to protect our rights
+
+4. Data Security
+
+We strive to use commercially acceptable means to protect your information. However, no method of transmission over the internet, or method of electronic storage, is 100% secure, and we cannot guarantee absolute security.
+
+5. Retention of Your Information
+
+We will retain your information for as long as your account is active or as necessary to provide you with our services. You can request deletion of your account and associated data by contacting us at the details below.
+
+6. Children’s Privacy
+
+Our App is not intended for individuals under the age of 18. We do not knowingly collect or solicit personal information from children. If we learn that we have collected personal information from a child, we will delete that information promptly.
+
+7. Your Rights
+
+Depending on your jurisdiction, you may have rights to access, correct, delete, or restrict the use of your personal information. To exercise these rights, please contact us at the details below.
+
+8. Changes to This Privacy Policy
+
+We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy within the App. You are advised to review this policy periodically for any updates.
+
+9. Contact Us
+
+If you have questions or concerns regarding this Privacy Policy, please contact us at:
+
+	•	Email: BetterJobztm@gmail.com
+	•	Phone: +973 3211 6262</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="EZp-aB-6uV" firstAttribute="centerX" secondItem="ymu-mR-tRV" secondAttribute="centerX" id="5EY-0R-1EL"/>
+                                            <constraint firstItem="EZp-aB-6uV" firstAttribute="leading" secondItem="wG8-6C-ocs" secondAttribute="leading" constant="138" id="6Rm-0w-eRv"/>
+                                            <constraint firstAttribute="height" constant="2500" id="9uc-uY-oQf"/>
+                                            <constraint firstItem="ymu-mR-tRV" firstAttribute="top" secondItem="EZp-aB-6uV" secondAttribute="bottom" constant="8" id="9zt-Rn-nyI"/>
+                                            <constraint firstItem="ymu-mR-tRV" firstAttribute="leading" secondItem="wG8-6C-ocs" secondAttribute="leading" constant="52" id="JxY-q1-GnJ"/>
+                                            <constraint firstItem="EZp-aB-6uV" firstAttribute="top" secondItem="wG8-6C-ocs" secondAttribute="topMargin" id="bBx-6C-KxK"/>
+                                            <constraint firstItem="ymu-mR-tRV" firstAttribute="bottom" secondItem="wG8-6C-ocs" secondAttribute="bottomMargin" id="xyo-7Q-oNp"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="wG8-6C-ocs" secondAttribute="trailing" id="RD2-45-cgh"/>
+                                    <constraint firstItem="wG8-6C-ocs" firstAttribute="top" secondItem="BRg-Ve-V1a" secondAttribute="top" id="SHc-9Z-sax"/>
+                                    <constraint firstAttribute="bottom" secondItem="wG8-6C-ocs" secondAttribute="bottom" id="hyJ-ak-PCC"/>
+                                    <constraint firstItem="wG8-6C-ocs" firstAttribute="centerX" secondItem="BRg-Ve-V1a" secondAttribute="centerX" id="iFM-cW-aBW"/>
+                                    <constraint firstItem="wG8-6C-ocs" firstAttribute="leading" secondItem="BRg-Ve-V1a" secondAttribute="leading" id="s7x-iI-DA9"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="isl-nJ-AE8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BRg-Ve-V1a" firstAttribute="top" secondItem="isl-nJ-AE8" secondAttribute="top" id="J42-mK-wHB"/>
+                            <constraint firstItem="BRg-Ve-V1a" firstAttribute="leading" secondItem="isl-nJ-AE8" secondAttribute="leading" id="aPz-Iv-1Bj"/>
+                            <constraint firstItem="BRg-Ve-V1a" firstAttribute="trailing" secondItem="isl-nJ-AE8" secondAttribute="trailing" id="iTs-FB-ceu"/>
+                            <constraint firstItem="BRg-Ve-V1a" firstAttribute="bottom" secondItem="isl-nJ-AE8" secondAttribute="bottom" id="jNp-Ai-vba"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="HNe-OU-mmN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VSW-m2-vQf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3230" y="-693"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Rjy-D0-8fj">
+            <objects>
+                <viewController id="WAh-HT-TPL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cGf-NC-g5y">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="OM5-Ql-yQy">
+                                <rect key="frame" x="39" y="206.33333333333334" width="315" height="452.66666666666663"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUn-2T-vSs">
+                                        <rect key="frame" x="69.000000000000014" y="0.0" width="177.33333333333337" height="44"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Privacy Policy">
+                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="25"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="sNB-2J-O7O" kind="presentation" id="cN6-gm-WIq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbl-wl-tiS">
+                                        <rect key="frame" x="94" y="81.999999999999972" width="127" height="44"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="About Us">
+                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="25"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="T24-6f-xZq" kind="popoverPresentation" popoverAnchorView="pbl-wl-tiS" id="FJ7-ri-wwn">
+                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                            </segue>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help &amp; Support" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMZ-49-Mim">
+                                        <rect key="frame" x="75.000000000000014" y="170.99999999999997" width="165.33333333333337" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   BetterJobztm@gmail.com    " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1y-nx-AcJ">
+                                        <rect key="frame" x="0.0" y="253" width="315" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+973 3211 6262" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6Z-np-Txq">
+                                        <rect key="frame" x="66.333333333333329" y="335" width="182.66666666666669" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fWl-5C-b3q">
+                                        <rect key="frame" x="101.33333333333334" y="408.66666666666663" width="112.33333333333334" height="44"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Log Out">
+                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="25"/>
+                                            <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="OM5-Ql-yQy" secondAttribute="height" multiplier="158:227" id="UKr-BQ-st6"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCx-Bg-AC5">
+                                <rect key="frame" x="122" y="77" width="149" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zqf-wP-6WF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zqf-wP-6WF" firstAttribute="bottom" secondItem="OM5-Ql-yQy" secondAttribute="bottom" constant="159" id="BMS-jk-fJB"/>
+                            <constraint firstItem="zqf-wP-6WF" firstAttribute="trailing" secondItem="OM5-Ql-yQy" secondAttribute="trailing" constant="39" id="CNm-AX-RPk"/>
+                            <constraint firstItem="OM5-Ql-yQy" firstAttribute="top" secondItem="VCx-Bg-AC5" secondAttribute="bottom" constant="81.333333333333314" id="Ivg-3L-Bjo"/>
+                            <constraint firstItem="OM5-Ql-yQy" firstAttribute="leading" secondItem="zqf-wP-6WF" secondAttribute="leading" constant="39" id="JYa-V9-iFW"/>
+                            <constraint firstItem="VCx-Bg-AC5" firstAttribute="leading" secondItem="zqf-wP-6WF" secondAttribute="leading" constant="122" id="hOu-yP-WMP"/>
+                            <constraint firstItem="VCx-Bg-AC5" firstAttribute="centerX" secondItem="OM5-Ql-yQy" secondAttribute="centerX" id="rzq-GO-dna"/>
+                            <constraint firstItem="VCx-Bg-AC5" firstAttribute="top" secondItem="cGf-NC-g5y" secondAttribute="topMargin" constant="-26" id="wGd-n0-uhn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ufg-1w-hVG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CBM-uc-gwq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="959.5419847328244" y="3.5211267605633805"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ogf-dn-bY2">
+            <objects>
+                <viewController id="T24-6f-xZq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pcP-qK-xG7">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HKX-Og-ijh">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DXH-4O-hG7">
+                                        <rect key="frame" x="0.0" y="0.0" width="425" height="2500"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Picture1_circular" translatesAutoresizingMaskIntoConstraints="NO" id="ZXq-n8-hkC">
+                                                <rect key="frame" x="-53" y="8" width="173" height="207"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="207" id="8HV-bU-7VW"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Picture1_circular" translatesAutoresizingMaskIntoConstraints="NO" id="U5N-zK-nLM">
+                                                <rect key="frame" x="309" y="289" width="173" height="207"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Picture1_circular" translatesAutoresizingMaskIntoConstraints="NO" id="El6-nj-o9q">
+                                                <rect key="frame" x="-53" y="542" width="173" height="207"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="207" id="HTU-Ge-Is6"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Picture1_circular" translatesAutoresizingMaskIntoConstraints="NO" id="gsb-qO-ude">
+                                                <rect key="frame" x="-53" y="1181" width="173" height="207"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="207" id="uxD-qY-R8t"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Picture1_circular" translatesAutoresizingMaskIntoConstraints="NO" id="Esk-FG-8K2">
+                                                <rect key="frame" x="-43" y="1801" width="173" height="207"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Picture1_circular" translatesAutoresizingMaskIntoConstraints="NO" id="pxc-h0-IXA">
+                                                <rect key="frame" x="309" y="1500" width="173" height="207"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Picture1_circular" translatesAutoresizingMaskIntoConstraints="NO" id="8CV-Es-SsT">
+                                                <rect key="frame" x="329" y="2106" width="173" height="207"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Picture1_circular" translatesAutoresizingMaskIntoConstraints="NO" id="9NS-SI-Zkk">
+                                                <rect key="frame" x="309" y="881" width="173" height="207"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Picture1_circular" translatesAutoresizingMaskIntoConstraints="NO" id="jJq-g8-0vK">
+                                                <rect key="frame" x="-24" y="2281" width="173" height="219"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="173" id="8Fl-RN-AZR"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgl-oi-6le">
+                                                <rect key="frame" x="161" y="0.0" width="103" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="fVw-6W-r1h"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6aX-fI-iF4">
+                                                <rect key="frame" x="33" y="94" width="359" height="2166"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="2166" id="Kv0-RA-dbM"/>
+                                                </constraints>
+                                                <string key="text">Welcome to BetterJobz – your dedicated partner in finding the perfect job in Bahrain. We believe that job searching should be easy, efficient, and tailored to your goals. That’s why we’ve created a platform that connects job seekers with employers seamlessly and intuitively, making the hiring process better for everyone.
+
+Our Mission
+
+At BetterJobz, our mission is to empower job seekers and employers by providing a platform that bridges the gap between talent and opportunity. We are committed to supporting Bahrain’s growing workforce with accessible, user-friendly tools that bring together experience, ambition, and opportunity in one place.
+
+What We Do
+
+BetterJobz simplifies the job search process by offering personalized job recommendations based on your skills, experience, and interests. Our platform enables you to create a profile, explore relevant job openings, and apply directly with just a few clicks. For employers, BetterJobz makes finding the right candidate faster and more effective by providing access to a talent pool with diverse skills and backgrounds.
+
+Why Choose BetterJobz?
+
+	•	Focused on Bahrain: We understand the unique dynamics of Bahrain’s job market and are committed to delivering a tailored experience for local job seekers and businesses.
+	•	Easy-to-Use Platform: Our app is designed with simplicity and convenience in mind, helping you find and apply for jobs without the hassle.
+	•	Personalized Job Recommendations: We connect you to job opportunities that align with your skills and career goals.
+	•	Security and Privacy: Your data privacy is important to us. We only collect essential information and are committed to safeguarding your personal information.
+
+Join the BetterJobz Community
+
+Whether you’re just starting your career, looking for a change, or seeking talent to grow your team, BetterJobz is here to support you. Join our community and take the next step in your career or recruitment journey with confidence.
+
+For any questions or feedback, please reach out to us at:
+
+	•	Email: BetterJobztm@gmail.com
+	•	Phone: +973 3211 6262</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="ZXq-n8-hkC" firstAttribute="top" secondItem="DXH-4O-hG7" secondAttribute="topMargin" id="2B3-7L-geu"/>
+                                            <constraint firstItem="ZXq-n8-hkC" firstAttribute="trailing" secondItem="gsb-qO-ude" secondAttribute="trailing" id="4hb-hM-aHT"/>
+                                            <constraint firstItem="ZXq-n8-hkC" firstAttribute="leading" secondItem="DXH-4O-hG7" secondAttribute="leading" constant="-53" id="8g4-0J-V28"/>
+                                            <constraint firstItem="zgl-oi-6le" firstAttribute="top" secondItem="DXH-4O-hG7" secondAttribute="top" id="BFi-JG-jwl"/>
+                                            <constraint firstItem="zgl-oi-6le" firstAttribute="leading" secondItem="ZXq-n8-hkC" secondAttribute="trailing" constant="41" id="Cv8-fb-jFO"/>
+                                            <constraint firstItem="6aX-fI-iF4" firstAttribute="leading" secondItem="DXH-4O-hG7" secondAttribute="leading" constant="33" id="F1O-SQ-xFg"/>
+                                            <constraint firstItem="ZXq-n8-hkC" firstAttribute="leading" secondItem="gsb-qO-ude" secondAttribute="leading" id="Fxj-bq-Qdx"/>
+                                            <constraint firstItem="ZXq-n8-hkC" firstAttribute="leading" secondItem="El6-nj-o9q" secondAttribute="leading" id="IO7-Ue-Bn9"/>
+                                            <constraint firstItem="zgl-oi-6le" firstAttribute="centerX" secondItem="6aX-fI-iF4" secondAttribute="centerX" id="JcY-Re-0SO"/>
+                                            <constraint firstItem="6aX-fI-iF4" firstAttribute="top" secondItem="zgl-oi-6le" secondAttribute="bottom" constant="34" id="LSD-Yb-DqE"/>
+                                            <constraint firstAttribute="height" constant="2500" id="T0u-Na-0Ze"/>
+                                            <constraint firstItem="jJq-g8-0vK" firstAttribute="top" secondItem="6aX-fI-iF4" secondAttribute="bottom" constant="21" id="TaD-eQ-JFV"/>
+                                            <constraint firstItem="ZXq-n8-hkC" firstAttribute="trailing" secondItem="El6-nj-o9q" secondAttribute="trailing" id="Vcc-jv-USe"/>
+                                            <constraint firstItem="zgl-oi-6le" firstAttribute="leading" secondItem="DXH-4O-hG7" secondAttribute="leading" constant="161" id="YPj-dv-kPI"/>
+                                            <constraint firstItem="jJq-g8-0vK" firstAttribute="leading" secondItem="DXH-4O-hG7" secondAttribute="leading" constant="-24" id="dkw-hE-Qp2"/>
+                                            <constraint firstItem="gsb-qO-ude" firstAttribute="top" secondItem="DXH-4O-hG7" secondAttribute="top" constant="1181" id="f9c-6N-yxm"/>
+                                            <constraint firstAttribute="bottom" secondItem="jJq-g8-0vK" secondAttribute="bottom" id="oVa-OG-dad"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="2500" id="pY0-kz-nrl"/>
+                                            <constraint firstItem="zgl-oi-6le" firstAttribute="centerX" secondItem="DXH-4O-hG7" secondAttribute="centerX" id="wv1-6r-eN3"/>
+                                            <constraint firstItem="El6-nj-o9q" firstAttribute="top" secondItem="DXH-4O-hG7" secondAttribute="top" constant="542" id="xxP-6l-51W"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="DXH-4O-hG7" firstAttribute="top" secondItem="HKX-Og-ijh" secondAttribute="top" id="3xe-8d-U4t"/>
+                                    <constraint firstAttribute="trailing" secondItem="DXH-4O-hG7" secondAttribute="trailing" id="9qF-Xs-SCS"/>
+                                    <constraint firstItem="DXH-4O-hG7" firstAttribute="leading" secondItem="HKX-Og-ijh" secondAttribute="leading" id="MnR-O6-szp"/>
+                                    <constraint firstAttribute="bottom" secondItem="DXH-4O-hG7" secondAttribute="bottom" id="Peh-aI-ybT"/>
+                                    <constraint firstAttribute="bottom" secondItem="DXH-4O-hG7" secondAttribute="bottom" id="VZn-pJ-Nr5"/>
+                                    <constraint firstAttribute="trailing" secondItem="DXH-4O-hG7" secondAttribute="trailing" id="fWn-ih-zEb"/>
+                                    <constraint firstItem="DXH-4O-hG7" firstAttribute="leading" secondItem="HKX-Og-ijh" secondAttribute="leading" id="nya-Ej-vve"/>
+                                    <constraint firstItem="DXH-4O-hG7" firstAttribute="top" secondItem="HKX-Og-ijh" secondAttribute="top" id="rv0-fw-XtE"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="k8h-lz-7mg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HKX-Og-ijh" firstAttribute="top" secondItem="k8h-lz-7mg" secondAttribute="top" id="FrY-LE-3xo"/>
+                            <constraint firstItem="HKX-Og-ijh" firstAttribute="trailing" secondItem="k8h-lz-7mg" secondAttribute="trailing" id="WhO-Jn-oVR"/>
+                            <constraint firstAttribute="bottom" secondItem="HKX-Og-ijh" secondAttribute="bottom" id="bdc-gd-6eZ"/>
+                            <constraint firstItem="HKX-Og-ijh" firstAttribute="leading" secondItem="k8h-lz-7mg" secondAttribute="leading" id="r0U-6h-k6I"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="X23-9M-MP4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ux-bJ-yYz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2476.7441860465115" y="324.46351931330474"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Picture1_circular" width="612" height="614"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
