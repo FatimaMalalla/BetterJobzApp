@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57B414302D0B3EFF009944CF /* JobApplicationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B4142F2D0B3EFF009944CF /* JobApplicationTableViewController.swift */; };
 		D43E517B2CF5EA3600916325 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E517A2CF5EA3600916325 /* AppDelegate.swift */; };
 		D43E517D2CF5EA3600916325 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E517C2CF5EA3600916325 /* SceneDelegate.swift */; };
 		D43E517F2CF5EA3600916325 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E517E2CF5EA3600916325 /* ViewController.swift */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		57B4142F2D0B3EFF009944CF /* JobApplicationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobApplicationTableViewController.swift; sourceTree = "<group>"; };
 		D43E51772CF5EA3600916325 /* BetterJobzApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterJobzApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D43E517A2CF5EA3600916325 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D43E517C2CF5EA3600916325 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +100,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57B4142E2D0B3E60009944CF /* JobApplication folder */ = {
+			isa = PBXGroup;
+			children = (
+				F277A1072CFC755D00033A29 /* JobApplicationStoryboard.storyboard */,
+				57B4142F2D0B3EFF009944CF /* JobApplicationTableViewController.swift */,
+			);
+			path = "JobApplication folder";
+			sourceTree = "<group>";
+		};
 		D43E516E2CF5EA3600916325 = {
 			isa = PBXGroup;
 			children = (
@@ -125,10 +136,10 @@
 				D43E517C2CF5EA3600916325 /* SceneDelegate.swift */,
 				D43E517E2CF5EA3600916325 /* ViewController.swift */,
 				D43E51852CF5EA3800916325 /* LaunchScreen.storyboard */,
-				F277A1072CFC755D00033A29 /* JobApplicationStoryboard.storyboard */,
 				D43E51802CF5EA3600916325 /* Main.storyboard */,
 				D43E51BE2CF614D900916325 /* DashboardViewController.swift */,
 				D43E51B82CF6064200916325 /* DashboardStoryBoard.storyboard */,
+				57B4142E2D0B3E60009944CF /* JobApplication folder */,
 				D43E51AC2CF5EE2000916325 /* CVtoolStoryboard.storyboard */,
 				D43E51AE2CF5EE2F00916325 /* ProfileStoryBoard.storyboard */,
 				D43E51B02CF5EE4300916325 /* SettingsStoryBoard.storyboard */,
@@ -304,6 +315,7 @@
 				D43E517B2CF5EA3600916325 /* AppDelegate.swift in Sources */,
 				D43E51BF2CF614D900916325 /* DashboardViewController.swift in Sources */,
 				D43E51BB2CF60FBD00916325 /* GradientBg.swift in Sources */,
+				57B414302D0B3EFF009944CF /* JobApplicationTableViewController.swift in Sources */,
 				D43E517D2CF5EA3600916325 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
