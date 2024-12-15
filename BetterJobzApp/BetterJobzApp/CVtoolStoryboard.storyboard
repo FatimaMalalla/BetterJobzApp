@@ -11,7 +11,6 @@
         <!--About Me View Controller-->
         <scene sceneID="SzU-TV-0Ln">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LnN-77-Kam" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="AboutMeViewController" id="nZd-Mk-blo" customClass="AboutMeViewController" customModule="BetterJobzApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0cR-ue-lhU">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
@@ -97,6 +96,7 @@
                         <outlet property="textView" destination="keF-Vx-HjV" id="l5k-Md-MVO"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LnN-77-Kam" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2559.5419847328244" y="9.8591549295774659"/>
         </scene>
@@ -226,7 +226,7 @@
                                             </subviews>
                                         </stackView>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKa-bl-ppO">
-                                            <rect key="frame" x="8" y="420" width="345" height="39"/>
+                                            <rect key="frame" x="8" y="420" width="345" height="34.333333333333314"/>
                                             <color key="tintColor" red="0.1801219583" green="0.29667085409999999" blue="0.5255519152" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="filled" title="Work Experience "/>
@@ -234,18 +234,14 @@
                                                 <segue destination="CkA-Ac-eOu" kind="show" id="wF6-Nm-iga"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tGr-ul-SxD">
-                                            <rect key="frame" x="8" y="531.66666666666663" width="345" height="34.333333333333371"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="34.333333333333371" id="U37-JC-Qo8"/>
-                                            </constraints>
-                                            <color key="tintColor" red="0.062745098040000002" green="0.13725490200000001" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccT-lh-FnN">
+                                            <rect key="frame" x="8" y="602" width="345" height="35"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="tintColor" red="0.18116217849999999" green="0.29666620490000001" blue="0.52568131689999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="filled" title="Generate CV"/>
                                             <connections>
-                                                <action selector="GenerateCV:" destination="QHu-2H-xcN" eventType="touchUpInside" id="lcn-Jy-bGA"/>
-                                                <action selector="GenerateCV:" destination="pxs-Y0-fSM" eventType="touchUpInside" id="y75-vk-nxA"/>
-                                                <action selector="GenerateCVtool:" destination="pxs-Y0-fSM" eventType="touchUpInside" id="JOY-pu-0kD"/>
+                                                <action selector="generateCVButtonTapped:" destination="pxs-Y0-fSM" eventType="touchUpInside" id="hph-Xe-cxR"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -258,9 +254,7 @@
                                         <constraint firstAttribute="trailing" secondItem="PKa-bl-ppO" secondAttribute="trailing" constant="8" id="Cxb-G3-fWn"/>
                                         <constraint firstAttribute="trailing" secondItem="c65-Gz-pWz" secondAttribute="trailing" constant="8" id="Gbq-SS-Gub"/>
                                         <constraint firstAttribute="trailing" secondItem="egM-MZ-TzP" secondAttribute="trailing" id="PH0-kW-rXi"/>
-                                        <constraint firstItem="tGr-ul-SxD" firstAttribute="leading" secondItem="PKa-bl-ppO" secondAttribute="leading" id="Qqd-5j-ZYu"/>
                                         <constraint firstItem="egM-MZ-TzP" firstAttribute="leading" secondItem="a9a-cw-Bzy" secondAttribute="leading" id="UCO-1n-JNb"/>
-                                        <constraint firstAttribute="bottom" secondItem="tGr-ul-SxD" secondAttribute="bottom" constant="108.00000000000011" id="V9b-Ga-PWe"/>
                                         <constraint firstItem="jvw-qX-8Vj" firstAttribute="top" secondItem="egM-MZ-TzP" secondAttribute="bottom" constant="8" symbolic="YES" id="Vwe-Vd-GxJ"/>
                                         <constraint firstItem="c65-Gz-pWz" firstAttribute="leading" secondItem="a9a-cw-Bzy" secondAttribute="leading" constant="8" id="X46-GS-7Aw"/>
                                         <constraint firstItem="S2V-2L-BS7" firstAttribute="leading" secondItem="a9a-cw-Bzy" secondAttribute="leading" constant="8" id="abf-iI-weS"/>
@@ -270,8 +264,6 @@
                                         <constraint firstAttribute="bottom" secondItem="jvw-qX-8Vj" secondAttribute="bottom" constant="356" id="hdQ-IT-1UE"/>
                                         <constraint firstAttribute="trailing" secondItem="S2V-2L-BS7" secondAttribute="trailing" constant="8" id="jH8-QG-IBR"/>
                                         <constraint firstItem="jvw-qX-8Vj" firstAttribute="leading" secondItem="a9a-cw-Bzy" secondAttribute="leading" constant="8" id="m9x-hB-b1L"/>
-                                        <constraint firstItem="tGr-ul-SxD" firstAttribute="top" secondItem="PKa-bl-ppO" secondAttribute="bottom" constant="72.666666666666629" id="qsX-4j-UWx"/>
-                                        <constraint firstItem="tGr-ul-SxD" firstAttribute="trailing" secondItem="PKa-bl-ppO" secondAttribute="trailing" id="t5e-8A-GQR"/>
                                         <constraint firstAttribute="bottom" secondItem="S2V-2L-BS7" secondAttribute="bottom" constant="262" id="ydK-GI-9E0"/>
                                     </constraints>
                                 </view>
@@ -301,15 +293,15 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="paperclip" catalog="system" selectedImage="paperclip" id="oP1-jw-RUd"/>
                     <connections>
-                        <outlet property="educationTextField" destination="2U9-6a-JVu" id="n8h-Yi-I2S"/>
-                        <outlet property="emailTextField" destination="P31-cf-mpa" id="STz-K2-VZw"/>
-                        <outlet property="languageTextField" destination="N1U-vY-JZL" id="1Gk-cW-zht"/>
-                        <outlet property="occupationTextField" destination="Li6-fP-GgM" id="feL-dd-Eyl"/>
-                        <outlet property="phoneNumberTextField" destination="qmG-UM-W07" id="h3f-xi-wo3"/>
+                        <outlet property="educationTextField" destination="2U9-6a-JVu" id="lhG-XO-ONA"/>
+                        <outlet property="emailTextField" destination="P31-cf-mpa" id="ypc-8Q-0E8"/>
+                        <outlet property="languageTextField" destination="N1U-vY-JZL" id="av9-Yh-qxt"/>
+                        <outlet property="occupationTextField" destination="Li6-fP-GgM" id="rnd-KE-n0f"/>
+                        <outlet property="phoneNumberTextField" destination="qmG-UM-W07" id="egA-8g-O1C"/>
+                        <segue destination="y0Z-mc-Dsb" kind="show" identifier="showGeneratedCVSegue" id="jMX-Nb-66a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JKW-no-WjL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="QHu-2H-xcN" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1686.2595419847328" y="9.8591549295774659"/>
         </scene>
@@ -384,6 +376,88 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="omF-7s-Dgi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3275.5725190839694" y="779.57746478873241"/>
+        </scene>
+        <!--GeneratedCV View Controller-->
+        <scene sceneID="Uv9-wV-faV">
+            <objects>
+                <viewController id="y0Z-mc-Dsb" customClass="GeneratedCVViewController" customModule="BetterJobzApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jiO-dI-Vzo">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t0A-Ko-ra5">
+                                <rect key="frame" x="16" y="72" width="361" height="675"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7oA-a5-YR9">
+                                        <rect key="frame" x="8" y="8" width="345" height="659"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.18116217849999999" green="0.29666620490000001" blue="0.52568131689999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Generated CV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Dt-au-feT">
+                                <rect key="frame" x="134" y="20" width="124" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rY-RH-3Td">
+                                <rect key="frame" x="16" y="755" width="179" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="179" id="MyP-yO-I1j"/>
+                                </constraints>
+                                <color key="tintColor" red="0.1212255002" green="0.19702852800000001" blue="0.3513542254" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Save As .PDF"/>
+                                <connections>
+                                    <action selector="saveAsPDFTapped:" destination="y0Z-mc-Dsb" eventType="touchUpInside" id="yQv-Px-HA0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="poK-Bh-9hn">
+                                <rect key="frame" x="198" y="755" width="179" height="35"/>
+                                <color key="tintColor" red="0.12122550018133213" green="0.19702852797899281" blue="0.35135422539465211" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Save As .doc"/>
+                                <connections>
+                                    <action selector="saveAsDocTapped:" destination="y0Z-mc-Dsb" eventType="touchUpInside" id="u8b-Gh-H9d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XeR-X3-beJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0Dt-au-feT" firstAttribute="leading" secondItem="XeR-X3-beJ" secondAttribute="leading" constant="134" id="5aj-04-jQM"/>
+                            <constraint firstItem="t0A-Ko-ra5" firstAttribute="trailing" secondItem="poK-Bh-9hn" secondAttribute="trailing" id="6Bh-G6-t22"/>
+                            <constraint firstItem="t0A-Ko-ra5" firstAttribute="top" secondItem="0Dt-au-feT" secondAttribute="bottom" constant="28" id="6yQ-GJ-z8B"/>
+                            <constraint firstItem="t0A-Ko-ra5" firstAttribute="top" secondItem="0Dt-au-feT" secondAttribute="bottom" constant="28" id="7kA-jF-1Bk"/>
+                            <constraint firstAttribute="bottom" secondItem="t0A-Ko-ra5" secondAttribute="bottom" constant="95" id="96Y-d5-kMP"/>
+                            <constraint firstItem="XeR-X3-beJ" firstAttribute="trailing" secondItem="t0A-Ko-ra5" secondAttribute="trailing" constant="16" id="ELM-QN-G66"/>
+                            <constraint firstItem="poK-Bh-9hn" firstAttribute="leading" secondItem="1rY-RH-3Td" secondAttribute="trailing" constant="3" id="FCd-4F-7OU"/>
+                            <constraint firstItem="poK-Bh-9hn" firstAttribute="top" secondItem="t0A-Ko-ra5" secondAttribute="bottom" constant="8" symbolic="YES" id="W3x-sH-dAE"/>
+                            <constraint firstItem="0Dt-au-feT" firstAttribute="top" secondItem="XeR-X3-beJ" secondAttribute="top" constant="20" id="YvR-pn-LzJ"/>
+                            <constraint firstItem="XeR-X3-beJ" firstAttribute="trailing" secondItem="0Dt-au-feT" secondAttribute="trailing" constant="135" id="jlz-8P-jWc"/>
+                            <constraint firstItem="1rY-RH-3Td" firstAttribute="leading" secondItem="t0A-Ko-ra5" secondAttribute="leading" id="kSx-Kh-Oxj"/>
+                            <constraint firstItem="t0A-Ko-ra5" firstAttribute="leading" secondItem="XeR-X3-beJ" secondAttribute="leading" constant="16" id="nWB-37-eBW"/>
+                            <constraint firstItem="1rY-RH-3Td" firstAttribute="baseline" secondItem="poK-Bh-9hn" secondAttribute="baseline" id="uHt-nX-g39"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="rBP-vc-wz5"/>
+                    <connections>
+                        <outlet property="cvTextView" destination="7oA-a5-YR9" id="XLP-E3-dvr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lf7-5u-svf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="817.55725190839689" y="779.57746478873241"/>
         </scene>
         <!--Interests View Controller-->
         <scene sceneID="lNb-3t-6ZV">
@@ -586,7 +660,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

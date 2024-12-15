@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC146F3B2D0F30CD00081473 /* GeneratedCVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC146F3A2D0F30CD00081473 /* GeneratedCVViewController.swift */; };
+		AC8559572D0F227B002DD57D /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8559562D0F227B002DD57D /* GradientView.swift */; };
 		C311BCD22CFF3C470063F268 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = C311BCD12CFF3C470063F268 /* FirebaseDatabase */; };
 		C311BCD42CFF3E0E0063F268 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C311BCD32CFF3E0E0063F268 /* SignupViewController.swift */; };
 		C311BCD62CFF3E980063F268 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C311BCD52CFF3E980063F268 /* LoginViewController.swift */; };
@@ -38,7 +40,6 @@
 		D43E51B52CF5EEE500916325 /* EmpProfileStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D43E51B42CF5EEE500916325 /* EmpProfileStoryBoard.storyboard */; };
 		D43E51B72CF5EF0900916325 /* JobPostingStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D43E51B62CF5EF0900916325 /* JobPostingStoryboard.storyboard */; };
 		D43E51B92CF6064200916325 /* DashboardStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D43E51B82CF6064200916325 /* DashboardStoryBoard.storyboard */; };
-		D43E51BB2CF60FBD00916325 /* GradientBg.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E51BA2CF60FBD00916325 /* GradientBg.swift */; };
 		D43E51BF2CF614D900916325 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E51BE2CF614D900916325 /* DashboardViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC146F3A2D0F30CD00081473 /* GeneratedCVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratedCVViewController.swift; sourceTree = "<group>"; };
+		AC8559562D0F227B002DD57D /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		C311BCD32CFF3E0E0063F268 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		C311BCD52CFF3E980063F268 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C31E7C1C2D056C090022CD6B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -90,7 +93,6 @@
 		D43E51B42CF5EEE500916325 /* EmpProfileStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EmpProfileStoryBoard.storyboard; sourceTree = "<group>"; };
 		D43E51B62CF5EF0900916325 /* JobPostingStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JobPostingStoryboard.storyboard; sourceTree = "<group>"; };
 		D43E51B82CF6064200916325 /* DashboardStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashboardStoryBoard.storyboard; sourceTree = "<group>"; };
-		D43E51BA2CF60FBD00916325 /* GradientBg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBg.swift; sourceTree = "<group>"; };
 		D43E51BE2CF614D900916325 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,20 +161,21 @@
 				D43E517C2CF5EA3600916325 /* SceneDelegate.swift */,
 				D43E517E2CF5EA3600916325 /* ViewController.swift */,
 				D43E51852CF5EA3800916325 /* LaunchScreen.storyboard */,
+				D43E51802CF5EA3600916325 /* Main.storyboard */,
 				D43E51B82CF6064200916325 /* DashboardStoryBoard.storyboard */,
+				D43E51AC2CF5EE2000916325 /* CVtoolStoryboard.storyboard */,
+				AC146F3A2D0F30CD00081473 /* GeneratedCVViewController.swift */,
+				D43E51AE2CF5EE2F00916325 /* ProfileStoryBoard.storyboard */,
+				D43E51B02CF5EE4300916325 /* SettingsStoryBoard.storyboard */,
 				C3F131E92D0AF55600861187 /* TabBarViewController.swift */,
 				CF18169A2D097C8C00D0162A /* SettingsViewController.swift */,
-				D43E51AC2CF5EE2000916325 /* CVtoolStoryboard.storyboard */,
 				C345BACD2D0B3A8700205693 /* InterestsViewController.swift */,
 				C345BACB2D0B351900205693 /* CVToolViewController.swift */,
 				C3F131FF2D0B20A900861187 /* AboutMeViewController.swift */,
-				D43E51802CF5EA3600916325 /* Main.storyboard */,
 				C311BCD52CFF3E980063F268 /* LoginViewController.swift */,
 				C311BCD32CFF3E0E0063F268 /* SignupViewController.swift */,
 				D43E51BE2CF614D900916325 /* DashboardViewController.swift */,
-				D43E51BA2CF60FBD00916325 /* GradientBg.swift */,
-				D43E51AE2CF5EE2F00916325 /* ProfileStoryBoard.storyboard */,
-				D43E51B02CF5EE4300916325 /* SettingsStoryBoard.storyboard */,
+				AC8559562D0F227B002DD57D /* GradientView.swift */,
 				D43E51B42CF5EEE500916325 /* EmpProfileStoryBoard.storyboard */,
 				D43E51B22CF5EEC800916325 /* EmpDashboardStroryBoard.storyboard */,
 				D43E51B62CF5EF0900916325 /* JobPostingStoryboard.storyboard */,
@@ -353,12 +356,13 @@
 			files = (
 				C311BCD62CFF3E980063F268 /* LoginViewController.swift in Sources */,
 				C311BCD42CFF3E0E0063F268 /* SignupViewController.swift in Sources */,
+				AC8559572D0F227B002DD57D /* GradientView.swift in Sources */,
 				D43E517F2CF5EA3600916325 /* ViewController.swift in Sources */,
 				D43E517B2CF5EA3600916325 /* AppDelegate.swift in Sources */,
 				C345BACE2D0B3A8700205693 /* InterestsViewController.swift in Sources */,
 				D43E51BF2CF614D900916325 /* DashboardViewController.swift in Sources */,
-				D43E51BB2CF60FBD00916325 /* GradientBg.swift in Sources */,
 				C345BACC2D0B351900205693 /* CVToolViewController.swift in Sources */,
+				AC146F3B2D0F30CD00081473 /* GeneratedCVViewController.swift in Sources */,
 				C345BAD42D0B403200205693 /* SkillsViewController.swift in Sources */,
 				C345BAD82D0B49F100205693 /* WorkEXPViewController.swift in Sources */,
 				D43E517D2CF5EA3600916325 /* SceneDelegate.swift in Sources */,
