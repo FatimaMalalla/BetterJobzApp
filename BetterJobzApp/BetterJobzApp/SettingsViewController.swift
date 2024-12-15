@@ -18,9 +18,9 @@ class SettingsViewController: ViewController {
     }
     
     
-    @IBAction func signout(_ sender: UIButton) {
-        
-        do {
+     
+    @IBAction func LogOut(_ sender: UIButton) {
+            do {
             // Sign out from Firebase
             try Auth.auth().signOut()
             
