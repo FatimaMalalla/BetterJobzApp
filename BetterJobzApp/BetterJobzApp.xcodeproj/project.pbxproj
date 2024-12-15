@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		57B414302D0B3EFF009944CF /* JobApplicationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B4142F2D0B3EFF009944CF /* JobApplicationTableViewController.swift */; };
 		D43E517B2CF5EA3600916325 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E517A2CF5EA3600916325 /* AppDelegate.swift */; };
 		D43E517D2CF5EA3600916325 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E517C2CF5EA3600916325 /* SceneDelegate.swift */; };
 		D43E517F2CF5EA3600916325 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E517E2CF5EA3600916325 /* ViewController.swift */; };
@@ -26,6 +25,11 @@
 		D43E51B92CF6064200916325 /* DashboardStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D43E51B82CF6064200916325 /* DashboardStoryBoard.storyboard */; };
 		D43E51BB2CF60FBD00916325 /* GradientBg.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E51BA2CF60FBD00916325 /* GradientBg.swift */; };
 		D43E51BF2CF614D900916325 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E51BE2CF614D900916325 /* DashboardViewController.swift */; };
+		D4684F022D0F2ADA0085D5C7 /* JobTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4684F012D0F2ADA0085D5C7 /* JobTableViewController.swift */; };
+		D4684F042D0F2FA10085D5C7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4684F032D0F2FA10085D5C7 /* GoogleService-Info.plist */; };
+		D4684F052D0F2FA10085D5C7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4684F032D0F2FA10085D5C7 /* GoogleService-Info.plist */; };
+		D4684F062D0F2FA10085D5C7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4684F032D0F2FA10085D5C7 /* GoogleService-Info.plist */; };
+		D4684F092D0F37AC0085D5C7 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = D4684F082D0F37AC0085D5C7 /* FirebaseDatabase */; };
 		F277A1082CFC755D00033A29 /* JobApplicationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F277A1072CFC755D00033A29 /* JobApplicationStoryboard.storyboard */; };
 		F277A10A2CFC75B800033A29 /* SkillDevelopmentStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F277A1092CFC75B800033A29 /* SkillDevelopmentStoryBoard.storyboard */; };
 /* End PBXBuildFile section */
@@ -48,7 +52,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		57B4142F2D0B3EFF009944CF /* JobApplicationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobApplicationTableViewController.swift; sourceTree = "<group>"; };
 		D43E51772CF5EA3600916325 /* BetterJobzApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterJobzApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D43E517A2CF5EA3600916325 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D43E517C2CF5EA3600916325 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +74,8 @@
 		D43E51B82CF6064200916325 /* DashboardStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashboardStoryBoard.storyboard; sourceTree = "<group>"; };
 		D43E51BA2CF60FBD00916325 /* GradientBg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBg.swift; sourceTree = "<group>"; };
 		D43E51BE2CF614D900916325 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		D4684F012D0F2ADA0085D5C7 /* JobTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTableViewController.swift; sourceTree = "<group>"; };
+		D4684F032D0F2FA10085D5C7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F277A1072CFC755D00033A29 /* JobApplicationStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JobApplicationStoryboard.storyboard; sourceTree = "<group>"; };
 		F277A1092CFC75B800033A29 /* SkillDevelopmentStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SkillDevelopmentStoryBoard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4684F092D0F37AC0085D5C7 /* FirebaseDatabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				F277A1072CFC755D00033A29 /* JobApplicationStoryboard.storyboard */,
-				57B4142F2D0B3EFF009944CF /* JobApplicationTableViewController.swift */,
+				D4684F012D0F2ADA0085D5C7 /* JobTableViewController.swift */,
 			);
 			path = "JobApplication folder";
 			sourceTree = "<group>";
@@ -150,6 +156,7 @@
 				D43E51BA2CF60FBD00916325 /* GradientBg.swift */,
 				D43E51832CF5EA3800916325 /* Assets.xcassets */,
 				D43E51882CF5EA3800916325 /* Info.plist */,
+				D4684F032D0F2FA10085D5C7 /* GoogleService-Info.plist */,
 			);
 			path = BetterJobzApp;
 			sourceTree = "<group>";
@@ -187,6 +194,9 @@
 			dependencies = (
 			);
 			name = BetterJobzApp;
+			packageProductDependencies = (
+				D4684F082D0F37AC0085D5C7 /* FirebaseDatabase */,
+			);
 			productName = BetterJobzApp;
 			productReference = D43E51772CF5EA3600916325 /* BetterJobzApp.app */;
 			productType = "com.apple.product-type.application";
@@ -259,6 +269,9 @@
 				Base,
 			);
 			mainGroup = D43E516E2CF5EA3600916325;
+			packageReferences = (
+				D4684F072D0F37AC0085D5C7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = D43E51782CF5EA3600916325 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -275,6 +288,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4684F042D0F2FA10085D5C7 /* GoogleService-Info.plist in Resources */,
 				D43E51872CF5EA3800916325 /* LaunchScreen.storyboard in Resources */,
 				D43E51842CF5EA3800916325 /* Assets.xcassets in Resources */,
 				F277A1082CFC755D00033A29 /* JobApplicationStoryboard.storyboard in Resources */,
@@ -294,6 +308,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4684F052D0F2FA10085D5C7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +316,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4684F062D0F2FA10085D5C7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,8 +331,8 @@
 				D43E517B2CF5EA3600916325 /* AppDelegate.swift in Sources */,
 				D43E51BF2CF614D900916325 /* DashboardViewController.swift in Sources */,
 				D43E51BB2CF60FBD00916325 /* GradientBg.swift in Sources */,
-				57B414302D0B3EFF009944CF /* JobApplicationTableViewController.swift in Sources */,
 				D43E517D2CF5EA3600916325 /* SceneDelegate.swift in Sources */,
+				D4684F022D0F2ADA0085D5C7 /* JobTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -657,6 +673,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D4684F072D0F37AC0085D5C7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D4684F082D0F37AC0085D5C7 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D4684F072D0F37AC0085D5C7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D43E516F2CF5EA3600916325 /* Project object */;
 }

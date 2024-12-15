@@ -359,7 +359,7 @@
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="createButtonTapped:" destination="3qn-pb-Fan" eventType="touchUpInside" id="UQd-ye-Bv2"/>
-                                                    <segue destination="6Ae-h1-kys" kind="show" identifier="showDashboardSegue" id="8jp-io-7dp"/>
+                                                    <segue destination="6Ae-h1-kys" kind="presentation" modalPresentationStyle="fullScreen" id="RIE-Xo-Lr8"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -395,7 +395,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="8jp-io-7dp"/>
+        <segue reference="RIE-Xo-Lr8"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Pasted Graphic" width="344" height="344"/>

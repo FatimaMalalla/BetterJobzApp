@@ -1,16 +1,41 @@
 //
-//  JobApplicationTableViewController.swift
+//  JobTableViewController.swift
 //  BetterJobzApp
 //
-//  Created by BP-36-201-06 on 12/12/2024.
+//  Created by BP-36-201-07 on 15/12/2024.
 //
 
 import UIKit
+import FirebaseDatabase
 
-class JobApplicationTableViewController: UITableViewController {
+class JobTableViewController: UITableViewController {
 
+    @IBOutlet weak var currentJobTitle: UITextField!
+    @IBOutlet weak var currentEmployerName: UITextField!
+    @IBOutlet weak var currentJobDesc: UITextField!
+    
+    //currentJobTitle
+    //currentEmployerName
+    //currentJobDesc
+    
+    var ref: DatabaseReference!
+    
+        /// Displays an alert with a title, message, and an action button.
+        func showAlert(title: String, message: String, buttonTitle: String = "OK", completion: (() -> Void)? = nil) {
+            let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+            let action = UIAlertAction(title: buttonTitle, style: .default) { _ in
+                // Call the completion handler if provided
+                completion?()
+            }
+            alertController.addAction(action)
+            self.present(alertController, animated: true, completion: nil)
+        }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        ref = Database.database().reference()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -20,17 +45,39 @@ class JobApplicationTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-/*
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
+    
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+    @IBAction func NextButtonTapped(_ sender: Any) {
+        guard let jobTitle = currentJobTitle.text, !jobTitle.isEmpty,
+              let employerName = currentEmployerName.text, !employerName.isEmpty,
+              let description = currentJobDesc.text, !description.isEmpty else {
+            showAlert(title: "Error", message: "All fields are required.")
+            return
+        }
+        let jobApplicationData: [String: Any] = [
+            "Current Job Title": jobTitle,
+            "Current Employer Name": employerName,
+            "Description of Current Job": description
+        ]
+        
+        ref.child("current_job_details").childByAutoId().setValue(jobApplicationData)
+
     }
-*/
+    
+    
+    
+    
+
+//    override func numberOfSections(in tableView: UITableView) -> Int {
+//        // #warning Incomplete implementation, return the number of sections
+//        return 0
+//    }
+//
+//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        // #warning Incomplete implementation, return the number of rows
+//        return 0
+//    }
+
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
@@ -84,6 +131,7 @@ class JobApplicationTableViewController: UITableViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
+    */
     
-*/
+
 }
