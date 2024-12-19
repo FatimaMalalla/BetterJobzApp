@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D1224ABD2D14179500940644 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1224ABC2D14179500940644 /* GoogleService-Info.plist */; };
 		D43E517B2CF5EA3600916325 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E517A2CF5EA3600916325 /* AppDelegate.swift */; };
 		D43E517D2CF5EA3600916325 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E517C2CF5EA3600916325 /* SceneDelegate.swift */; };
 		D43E517F2CF5EA3600916325 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E517E2CF5EA3600916325 /* ViewController.swift */; };
@@ -16,19 +17,9 @@
 		D43E51922CF5EA3800916325 /* BetterJobzAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E51912CF5EA3800916325 /* BetterJobzAppTests.swift */; };
 		D43E519C2CF5EA3800916325 /* BetterJobzAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E519B2CF5EA3800916325 /* BetterJobzAppUITests.swift */; };
 		D43E519E2CF5EA3800916325 /* BetterJobzAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E519D2CF5EA3800916325 /* BetterJobzAppUITestsLaunchTests.swift */; };
-		D43E51AD2CF5EE2000916325 /* CVtoolStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D43E51AC2CF5EE2000916325 /* CVtoolStoryboard.storyboard */; };
-		D43E51AF2CF5EE2F00916325 /* ProfileStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D43E51AE2CF5EE2F00916325 /* ProfileStoryBoard.storyboard */; };
-		D43E51B12CF5EE4300916325 /* SettingsStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D43E51B02CF5EE4300916325 /* SettingsStoryBoard.storyboard */; };
-		D43E51B32CF5EEC800916325 /* EmpDashboardStroryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D43E51B22CF5EEC800916325 /* EmpDashboardStroryBoard.storyboard */; };
-		D43E51B52CF5EEE500916325 /* EmpProfileStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D43E51B42CF5EEE500916325 /* EmpProfileStoryBoard.storyboard */; };
-		D43E51B72CF5EF0900916325 /* JobPostingStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D43E51B62CF5EF0900916325 /* JobPostingStoryboard.storyboard */; };
-		D43E51B92CF6064200916325 /* DashboardStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D43E51B82CF6064200916325 /* DashboardStoryBoard.storyboard */; };
 		D43E51BB2CF60FBD00916325 /* GradientBg.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E51BA2CF60FBD00916325 /* GradientBg.swift */; };
 		D43E51BF2CF614D900916325 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E51BE2CF614D900916325 /* DashboardViewController.swift */; };
 		D4684F022D0F2ADA0085D5C7 /* JobTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4684F012D0F2ADA0085D5C7 /* JobTableViewController.swift */; };
-		D4684F042D0F2FA10085D5C7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4684F032D0F2FA10085D5C7 /* GoogleService-Info.plist */; };
-		D4684F052D0F2FA10085D5C7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4684F032D0F2FA10085D5C7 /* GoogleService-Info.plist */; };
-		D4684F062D0F2FA10085D5C7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4684F032D0F2FA10085D5C7 /* GoogleService-Info.plist */; };
 		D4684F092D0F37AC0085D5C7 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = D4684F082D0F37AC0085D5C7 /* FirebaseDatabase */; };
 		F277A1082CFC755D00033A29 /* JobApplicationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F277A1072CFC755D00033A29 /* JobApplicationStoryboard.storyboard */; };
 		F277A10A2CFC75B800033A29 /* SkillDevelopmentStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F277A1092CFC75B800033A29 /* SkillDevelopmentStoryBoard.storyboard */; };
@@ -52,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D1224ABC2D14179500940644 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D43E51772CF5EA3600916325 /* BetterJobzApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterJobzApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D43E517A2CF5EA3600916325 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D43E517C2CF5EA3600916325 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,17 +57,9 @@
 		D43E51972CF5EA3800916325 /* BetterJobzAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetterJobzAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D43E519B2CF5EA3800916325 /* BetterJobzAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterJobzAppUITests.swift; sourceTree = "<group>"; };
 		D43E519D2CF5EA3800916325 /* BetterJobzAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterJobzAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		D43E51AC2CF5EE2000916325 /* CVtoolStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CVtoolStoryboard.storyboard; sourceTree = "<group>"; };
-		D43E51AE2CF5EE2F00916325 /* ProfileStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileStoryBoard.storyboard; sourceTree = "<group>"; };
-		D43E51B02CF5EE4300916325 /* SettingsStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingsStoryBoard.storyboard; sourceTree = "<group>"; };
-		D43E51B22CF5EEC800916325 /* EmpDashboardStroryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EmpDashboardStroryBoard.storyboard; sourceTree = "<group>"; };
-		D43E51B42CF5EEE500916325 /* EmpProfileStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EmpProfileStoryBoard.storyboard; sourceTree = "<group>"; };
-		D43E51B62CF5EF0900916325 /* JobPostingStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JobPostingStoryboard.storyboard; sourceTree = "<group>"; };
-		D43E51B82CF6064200916325 /* DashboardStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashboardStoryBoard.storyboard; sourceTree = "<group>"; };
 		D43E51BA2CF60FBD00916325 /* GradientBg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBg.swift; sourceTree = "<group>"; };
 		D43E51BE2CF614D900916325 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		D4684F012D0F2ADA0085D5C7 /* JobTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTableViewController.swift; sourceTree = "<group>"; };
-		D4684F032D0F2FA10085D5C7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F277A1072CFC755D00033A29 /* JobApplicationStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JobApplicationStoryboard.storyboard; sourceTree = "<group>"; };
 		F277A1092CFC75B800033A29 /* SkillDevelopmentStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SkillDevelopmentStoryBoard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,6 +99,14 @@
 			path = "JobApplication folder";
 			sourceTree = "<group>";
 		};
+		D1224ABE2D1454D400940644 /* SkillDevelopment folder */ = {
+			isa = PBXGroup;
+			children = (
+				F277A1092CFC75B800033A29 /* SkillDevelopmentStoryBoard.storyboard */,
+			);
+			path = "SkillDevelopment folder";
+			sourceTree = "<group>";
+		};
 		D43E516E2CF5EA3600916325 = {
 			isa = PBXGroup;
 			children = (
@@ -144,19 +136,12 @@
 				D43E51852CF5EA3800916325 /* LaunchScreen.storyboard */,
 				D43E51802CF5EA3600916325 /* Main.storyboard */,
 				D43E51BE2CF614D900916325 /* DashboardViewController.swift */,
-				D43E51B82CF6064200916325 /* DashboardStoryBoard.storyboard */,
 				57B4142E2D0B3E60009944CF /* JobApplication folder */,
-				D43E51AC2CF5EE2000916325 /* CVtoolStoryboard.storyboard */,
-				D43E51AE2CF5EE2F00916325 /* ProfileStoryBoard.storyboard */,
-				D43E51B02CF5EE4300916325 /* SettingsStoryBoard.storyboard */,
-				D43E51B22CF5EEC800916325 /* EmpDashboardStroryBoard.storyboard */,
-				D43E51B42CF5EEE500916325 /* EmpProfileStoryBoard.storyboard */,
-				F277A1092CFC75B800033A29 /* SkillDevelopmentStoryBoard.storyboard */,
-				D43E51B62CF5EF0900916325 /* JobPostingStoryboard.storyboard */,
+				D1224ABE2D1454D400940644 /* SkillDevelopment folder */,
 				D43E51BA2CF60FBD00916325 /* GradientBg.swift */,
 				D43E51832CF5EA3800916325 /* Assets.xcassets */,
 				D43E51882CF5EA3800916325 /* Info.plist */,
-				D4684F032D0F2FA10085D5C7 /* GoogleService-Info.plist */,
+				D1224ABC2D14179500940644 /* GoogleService-Info.plist */,
 			);
 			path = BetterJobzApp;
 			sourceTree = "<group>";
@@ -288,19 +273,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4684F042D0F2FA10085D5C7 /* GoogleService-Info.plist in Resources */,
+				D1224ABD2D14179500940644 /* GoogleService-Info.plist in Resources */,
 				D43E51872CF5EA3800916325 /* LaunchScreen.storyboard in Resources */,
 				D43E51842CF5EA3800916325 /* Assets.xcassets in Resources */,
 				F277A1082CFC755D00033A29 /* JobApplicationStoryboard.storyboard in Resources */,
-				D43E51B72CF5EF0900916325 /* JobPostingStoryboard.storyboard in Resources */,
-				D43E51B52CF5EEE500916325 /* EmpProfileStoryBoard.storyboard in Resources */,
 				D43E51822CF5EA3600916325 /* Main.storyboard in Resources */,
-				D43E51B12CF5EE4300916325 /* SettingsStoryBoard.storyboard in Resources */,
 				F277A10A2CFC75B800033A29 /* SkillDevelopmentStoryBoard.storyboard in Resources */,
-				D43E51B92CF6064200916325 /* DashboardStoryBoard.storyboard in Resources */,
-				D43E51AD2CF5EE2000916325 /* CVtoolStoryboard.storyboard in Resources */,
-				D43E51B32CF5EEC800916325 /* EmpDashboardStroryBoard.storyboard in Resources */,
-				D43E51AF2CF5EE2F00916325 /* ProfileStoryBoard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,7 +286,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4684F052D0F2FA10085D5C7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,7 +293,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4684F062D0F2FA10085D5C7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

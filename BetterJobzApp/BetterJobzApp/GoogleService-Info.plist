@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyDg8uxkamXna3Nmfee4qah_qipN6eWQf70</string>
+	<key>GCM_SENDER_ID</key>
+	<string>139816575337</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>bp.polytechnic.BetterJobzApp</string>
+	<key>PROJECT_ID</key>
+	<string>better-5ddeb</string>
+	<key>STORAGE_BUCKET</key>
+	<string>better-5ddeb.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>DATABASE_URL</key>
+	<string>https://better-5ddeb-default-rtdb.europe-west1.firebasedatabase.app/</string>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:139816575337:ios:ca40d6c382e79b9988ddf8</string>
+</dict>
+</plist>
