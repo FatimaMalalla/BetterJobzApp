@@ -178,10 +178,10 @@
             </objects>
             <point key="canvasLocation" x="1922.9007633587785" y="-2.1126760563380285"/>
         </scene>
-        <!--JobApplicationStoryboard-->
+        <!--SkillDevelopmentStoryBoard-->
         <scene sceneID="Jc9-RB-OnO">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="DashboardViewController" storyboardName="JobApplicationStoryboard" id="6Ae-h1-kys" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="DashboardViewController" storyboardName="SkillDevelopmentStoryBoard" id="6Ae-h1-kys" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="H0X-g2-kcj"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dIo-0G-dxe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

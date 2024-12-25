@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83DDAF232D1C44AE009D512F /* FirstPageArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DDAF222D1C44AE009D512F /* FirstPageArticleViewController.swift */; };
+		83DDAF252D1C4D4A009D512F /* SecondPageArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DDAF242D1C4D4A009D512F /* SecondPageArticleViewController.swift */; };
+		83DDAF272D1C54BF009D512F /* FirstPageTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DDAF262D1C54BF009D512F /* FirstPageTutorialViewController.swift */; };
+		83DDAF292D1C54E1009D512F /* SecondPageTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DDAF282D1C54E1009D512F /* SecondPageTutorialViewController.swift */; };
+		83DDAF312D1C706C009D512F /* VideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DDAF302D1C706C009D512F /* VideosViewController.swift */; };
 		D1224ABD2D14179500940644 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1224ABC2D14179500940644 /* GoogleService-Info.plist */; };
 		D43E517B2CF5EA3600916325 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E517A2CF5EA3600916325 /* AppDelegate.swift */; };
 		D43E517D2CF5EA3600916325 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E517C2CF5EA3600916325 /* SceneDelegate.swift */; };
@@ -43,6 +48,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		83DDAF222D1C44AE009D512F /* FirstPageArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageArticleViewController.swift; sourceTree = "<group>"; };
+		83DDAF242D1C4D4A009D512F /* SecondPageArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPageArticleViewController.swift; sourceTree = "<group>"; };
+		83DDAF262D1C54BF009D512F /* FirstPageTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageTutorialViewController.swift; sourceTree = "<group>"; };
+		83DDAF282D1C54E1009D512F /* SecondPageTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPageTutorialViewController.swift; sourceTree = "<group>"; };
+		83DDAF302D1C706C009D512F /* VideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewController.swift; sourceTree = "<group>"; };
 		D1224ABC2D14179500940644 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D43E51772CF5EA3600916325 /* BetterJobzApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterJobzApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D43E517A2CF5EA3600916325 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +113,11 @@
 			isa = PBXGroup;
 			children = (
 				F277A1092CFC75B800033A29 /* SkillDevelopmentStoryBoard.storyboard */,
+				83DDAF282D1C54E1009D512F /* SecondPageTutorialViewController.swift */,
+				83DDAF302D1C706C009D512F /* VideosViewController.swift */,
+				83DDAF222D1C44AE009D512F /* FirstPageArticleViewController.swift */,
+				83DDAF262D1C54BF009D512F /* FirstPageTutorialViewController.swift */,
+				83DDAF242D1C4D4A009D512F /* SecondPageArticleViewController.swift */,
 			);
 			path = "SkillDevelopment folder";
 			sourceTree = "<group>";
@@ -138,8 +153,8 @@
 				D43E51BE2CF614D900916325 /* DashboardViewController.swift */,
 				57B4142E2D0B3E60009944CF /* JobApplication folder */,
 				D1224ABE2D1454D400940644 /* SkillDevelopment folder */,
-				D43E51BA2CF60FBD00916325 /* GradientBg.swift */,
 				D43E51832CF5EA3800916325 /* Assets.xcassets */,
+				D43E51BA2CF60FBD00916325 /* GradientBg.swift */,
 				D43E51882CF5EA3800916325 /* Info.plist */,
 				D1224ABC2D14179500940644 /* GoogleService-Info.plist */,
 			);
@@ -304,11 +319,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D43E517F2CF5EA3600916325 /* ViewController.swift in Sources */,
+				83DDAF232D1C44AE009D512F /* FirstPageArticleViewController.swift in Sources */,
+				83DDAF312D1C706C009D512F /* VideosViewController.swift in Sources */,
 				D43E517B2CF5EA3600916325 /* AppDelegate.swift in Sources */,
 				D43E51BF2CF614D900916325 /* DashboardViewController.swift in Sources */,
+				83DDAF252D1C4D4A009D512F /* SecondPageArticleViewController.swift in Sources */,
+				83DDAF272D1C54BF009D512F /* FirstPageTutorialViewController.swift in Sources */,
 				D43E51BB2CF60FBD00916325 /* GradientBg.swift in Sources */,
 				D43E517D2CF5EA3600916325 /* SceneDelegate.swift in Sources */,
 				D4684F022D0F2ADA0085D5C7 /* JobTableViewController.swift in Sources */,
+				83DDAF292D1C54E1009D512F /* SecondPageTutorialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
