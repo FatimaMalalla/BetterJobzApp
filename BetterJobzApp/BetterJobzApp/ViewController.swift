@@ -23,6 +23,7 @@ class ViewController: UIViewController {
         // Retrieve user input
         let username = Username.text ?? ""
         let password = Password.text ?? ""
+        print("Hello")
         
         // Validate user input
         if username.isEmpty || password.isEmpty {
